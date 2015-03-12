@@ -290,20 +290,33 @@ p {
 }
 
 /* line 26, ../../_compass/screen.scss */
+ul {
+  font-size: 0.85em;
+  margin-left: 1.5em;
+  list-style-type: disc;
+  margin-bottom: 1.5em;
+}
+
+/* line 33, ../../_compass/screen.scss */
+i {
+  font-style: italic;
+}
+
+/* line 37, ../../_compass/screen.scss */
 b {
   font-weight: bold;
 }
 
-/* line 30, ../../_compass/screen.scss */
+/* line 41, ../../_compass/screen.scss */
 a {
   color: #115EA1;
   text-decoration: none;
 }
-/* line 34, ../../_compass/screen.scss */
+/* line 45, ../../_compass/screen.scss */
 a:hover {
   text-decoration: underline;
 }
-/* line 38, ../../_compass/screen.scss */
+/* line 49, ../../_compass/screen.scss */
 a.button {
   color: #fff;
   background-color: #CD220C;
@@ -311,7 +324,7 @@ a.button {
   border-radius: 4px;
 }
 
-/* line 46, ../../_compass/screen.scss */
+/* line 57, ../../_compass/screen.scss */
 h1.title {
   width: 140px;
   margin-bottom: 16px;
@@ -320,7 +333,7 @@ h1.title {
   font-weight: 500;
   line-height: 1em;
 }
-/* line 54, ../../_compass/screen.scss */
+/* line 65, ../../_compass/screen.scss */
 h1.title span {
   display: block;
   text-transform: lowercase;
@@ -329,7 +342,7 @@ h1.title span {
   line-height: 0.8em;
 }
 
-/* line 63, ../../_compass/screen.scss */
+/* line 74, ../../_compass/screen.scss */
 section h1 {
   margin-bottom: 12px;
   font-family: "Raleway";
@@ -337,49 +350,56 @@ section h1 {
   text-transform: uppercase;
 }
 
-/* line 70, ../../_compass/screen.scss */
+/* line 81, ../../_compass/screen.scss */
 .sponsors {
   text-align: center;
 }
-/* line 73, ../../_compass/screen.scss */
-.sponsors li {
+/* line 84, ../../_compass/screen.scss */
+.sponsors ul {
+  margin-left: 0;
+  list-style-type: none;
+}
+/* line 88, ../../_compass/screen.scss */
+.sponsors ul li {
   margin-top: 20px;
 }
-/* line 76, ../../_compass/screen.scss */
-.sponsors li img {
+/* line 91, ../../_compass/screen.scss */
+.sponsors ul li img {
   width: 100%;
   max-width: 250px;
 }
 
-/* line 83, ../../_compass/screen.scss */
+/* line 99, ../../_compass/screen.scss */
 ul.social {
   overflow: hidden;
   *zoom: 1;
   margin-top: 24px;
+  margin-left: 0;
+  list-style-type: none;
 }
-/* line 87, ../../_compass/screen.scss */
+/* line 105, ../../_compass/screen.scss */
 ul.social li {
   float: left;
   margin-right: 16px;
 }
-/* line 91, ../../_compass/screen.scss */
+/* line 109, ../../_compass/screen.scss */
 ul.social li img {
   width: 48px;
 }
 
-/* line 97, ../../_compass/screen.scss */
+/* line 115, ../../_compass/screen.scss */
 section.upcoming {
   background-color: #ddd;
   color: #000;
 }
-/* line 102, ../../_compass/screen.scss */
+/* line 120, ../../_compass/screen.scss */
 section.upcoming hgroup h2 {
   margin-bottom: 8px;
   font-family: "Raleway";
   font-weight: 200;
   text-transform: uppercase;
 }
-/* line 109, ../../_compass/screen.scss */
+/* line 127, ../../_compass/screen.scss */
 section.upcoming hgroup h1 {
   margin-bottom: 16px;
   font-family: "Raleway";
@@ -389,18 +409,18 @@ section.upcoming hgroup h1 {
   line-height: 1.1em;
 }
 
-/* line 120, ../../_compass/screen.scss */
+/* line 138, ../../_compass/screen.scss */
 .location {
   margin-bottom: 32px;
 }
-/* line 123, ../../_compass/screen.scss */
+/* line 141, ../../_compass/screen.scss */
 .location img {
   position: relative;
   top: 3px;
   margin: 0 2px 0 2px;
 }
 
-/* line 131, ../../_compass/screen.scss */
+/* line 149, ../../_compass/screen.scss */
 .map a {
   width: 100%;
   height: 276px;
