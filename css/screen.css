@@ -387,20 +387,15 @@ ul.social li img {
   width: 48px;
 }
 
-/* line 115, ../../_compass/screen.scss */
-section.upcoming {
-  background-color: #ddd;
-  color: #000;
-}
-/* line 120, ../../_compass/screen.scss */
-section.upcoming hgroup h2 {
+/* line 117, ../../_compass/screen.scss */
+section.upcoming hgroup h2, section.previous hgroup h2 {
   margin-bottom: 8px;
   font-family: "Raleway";
   font-weight: 200;
   text-transform: uppercase;
 }
-/* line 127, ../../_compass/screen.scss */
-section.upcoming hgroup h1 {
+/* line 124, ../../_compass/screen.scss */
+section.upcoming hgroup h1, section.previous hgroup h1 {
   margin-bottom: 16px;
   font-family: "Raleway";
   font-weight: 200;
@@ -409,18 +404,24 @@ section.upcoming hgroup h1 {
   line-height: 1.1em;
 }
 
-/* line 138, ../../_compass/screen.scss */
+/* line 135, ../../_compass/screen.scss */
+section.upcoming {
+  background-color: #ddd;
+  color: #000;
+}
+
+/* line 140, ../../_compass/screen.scss */
 .location {
   margin-bottom: 32px;
 }
-/* line 141, ../../_compass/screen.scss */
+/* line 143, ../../_compass/screen.scss */
 .location img {
   position: relative;
   top: 3px;
   margin: 0 2px 0 2px;
 }
 
-/* line 149, ../../_compass/screen.scss */
+/* line 151, ../../_compass/screen.scss */
 .map a {
   width: 100%;
   height: 276px;
@@ -430,6 +431,16 @@ section.upcoming hgroup h1 {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  background-image: url("https://maps.googleapis.com/maps/api/staticmap?center=55.939827,-3.182285&zoom=14&size=609x260&markers=55.939827,-3.182285");
+  background-image: url("https://maps.googleapis.com/maps/api/staticmap?center=55.949827,-3.187285&zoom=12&size=609x260");
   background-position: center;
+}
+
+/* line 165, ../../_compass/screen.scss */
+.thumbnail {
+  width: 100%;
+  margin-bottom: 1em;
+  border: 8px solid #e2e2e2;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
