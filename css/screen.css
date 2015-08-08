@@ -431,7 +431,7 @@ section.upcoming {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  background-image: url("https://maps.googleapis.com/maps/api/staticmap?center=55.955860,-3.188050&zoom=14&size=609x260&markers=55.959460,-3.179416");
+  background-image: url("https://maps.googleapis.com/maps/api/staticmap?center=55.949827,-3.187285&zoom=12&size=609x260");
   background-position: center;
 }
 
@@ -443,4 +443,20 @@ section.upcoming {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
+}
+/* line 173, ../../_compass/screen.scss */
+.thumbnail.mini {
+  width: 120px;
+  border: 4px solid #e2e2e2;
+  margin-right: 16px;
+  opacity: 0.5;
+}
+/* line 179, ../../_compass/screen.scss */
+.thumbnail.mini:hover {
+  opacity: 1;
+}
+
+/* line 185, ../../_compass/screen.scss */
+.column-2 .column-1:first-child {
+  margin-left: 0;
 }
