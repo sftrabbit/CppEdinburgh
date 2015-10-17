@@ -291,32 +291,31 @@ p {
 
 /* line 26, ../../_compass/screen.scss */
 ul {
-  font-size: 0.85em;
   margin-left: 1.5em;
   list-style-type: disc;
   margin-bottom: 1.5em;
 }
 
-/* line 33, ../../_compass/screen.scss */
+/* line 32, ../../_compass/screen.scss */
 i {
   font-style: italic;
 }
 
-/* line 37, ../../_compass/screen.scss */
+/* line 36, ../../_compass/screen.scss */
 b {
   font-weight: bold;
 }
 
-/* line 41, ../../_compass/screen.scss */
+/* line 40, ../../_compass/screen.scss */
 a {
   color: #115EA1;
   text-decoration: none;
 }
-/* line 45, ../../_compass/screen.scss */
+/* line 44, ../../_compass/screen.scss */
 a:hover {
   text-decoration: underline;
 }
-/* line 49, ../../_compass/screen.scss */
+/* line 48, ../../_compass/screen.scss */
 a.button {
   color: #fff;
   background-color: #CD220C;
@@ -324,7 +323,7 @@ a.button {
   border-radius: 4px;
 }
 
-/* line 57, ../../_compass/screen.scss */
+/* line 56, ../../_compass/screen.scss */
 h1.title {
   width: 140px;
   margin-bottom: 16px;
@@ -333,7 +332,7 @@ h1.title {
   font-weight: 500;
   line-height: 1em;
 }
-/* line 65, ../../_compass/screen.scss */
+/* line 64, ../../_compass/screen.scss */
 h1.title span {
   display: block;
   text-transform: lowercase;
@@ -342,7 +341,7 @@ h1.title span {
   line-height: 0.8em;
 }
 
-/* line 74, ../../_compass/screen.scss */
+/* line 73, ../../_compass/screen.scss */
 section h1 {
   margin-bottom: 12px;
   font-family: "Raleway";
@@ -350,26 +349,26 @@ section h1 {
   text-transform: uppercase;
 }
 
-/* line 81, ../../_compass/screen.scss */
+/* line 80, ../../_compass/screen.scss */
 .sponsors {
   text-align: center;
 }
-/* line 84, ../../_compass/screen.scss */
+/* line 83, ../../_compass/screen.scss */
 .sponsors ul {
   margin-left: 0;
   list-style-type: none;
 }
-/* line 88, ../../_compass/screen.scss */
+/* line 87, ../../_compass/screen.scss */
 .sponsors ul li {
   margin-top: 20px;
 }
-/* line 91, ../../_compass/screen.scss */
+/* line 90, ../../_compass/screen.scss */
 .sponsors ul li img {
   width: 100%;
   max-width: 250px;
 }
 
-/* line 99, ../../_compass/screen.scss */
+/* line 98, ../../_compass/screen.scss */
 ul.social {
   overflow: hidden;
   *zoom: 1;
@@ -377,24 +376,24 @@ ul.social {
   margin-left: 0;
   list-style-type: none;
 }
-/* line 105, ../../_compass/screen.scss */
+/* line 104, ../../_compass/screen.scss */
 ul.social li {
   float: left;
   margin-right: 16px;
 }
-/* line 109, ../../_compass/screen.scss */
+/* line 108, ../../_compass/screen.scss */
 ul.social li img {
   width: 48px;
 }
 
-/* line 117, ../../_compass/screen.scss */
+/* line 116, ../../_compass/screen.scss */
 section.upcoming hgroup h2, section.previous hgroup h2 {
   margin-bottom: 8px;
   font-family: "Raleway";
   font-weight: 200;
   text-transform: uppercase;
 }
-/* line 124, ../../_compass/screen.scss */
+/* line 123, ../../_compass/screen.scss */
 section.upcoming hgroup h1, section.previous hgroup h1 {
   margin-bottom: 16px;
   font-family: "Raleway";
@@ -404,24 +403,24 @@ section.upcoming hgroup h1, section.previous hgroup h1 {
   line-height: 1.1em;
 }
 
-/* line 135, ../../_compass/screen.scss */
+/* line 134, ../../_compass/screen.scss */
 section.upcoming {
   background-color: #ddd;
   color: #000;
 }
 
-/* line 140, ../../_compass/screen.scss */
+/* line 139, ../../_compass/screen.scss */
 .location {
   margin-bottom: 32px;
 }
-/* line 143, ../../_compass/screen.scss */
+/* line 142, ../../_compass/screen.scss */
 .location img {
   position: relative;
   top: 3px;
   margin: 0 2px 0 2px;
 }
 
-/* line 151, ../../_compass/screen.scss */
+/* line 150, ../../_compass/screen.scss */
 .map a {
   width: 100%;
   height: 276px;
@@ -435,7 +434,7 @@ section.upcoming {
   background-position: center;
 }
 
-/* line 165, ../../_compass/screen.scss */
+/* line 164, ../../_compass/screen.scss */
 .thumbnail {
   width: 100%;
   margin-bottom: 1em;
@@ -444,19 +443,19 @@ section.upcoming {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
-/* line 173, ../../_compass/screen.scss */
+/* line 172, ../../_compass/screen.scss */
 .thumbnail.mini {
   width: 120px;
   border: 4px solid #e2e2e2;
   margin-right: 16px;
   opacity: 0.5;
 }
-/* line 179, ../../_compass/screen.scss */
+/* line 178, ../../_compass/screen.scss */
 .thumbnail.mini:hover {
   opacity: 1;
 }
 
-/* line 185, ../../_compass/screen.scss */
+/* line 184, ../../_compass/screen.scss */
 .column-2 .column-1:first-child {
   margin-left: 0;
 }
