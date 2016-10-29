@@ -430,7 +430,7 @@ section.upcoming {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  background-image: url("https://maps.googleapis.com/maps/api/staticmap?center=55.949827,-3.187285&zoom=12&size=609x260");
+  background-image: url("https://maps.googleapis.com/maps/api/staticmap?center=55.94944012,-3.19577694&zoom=14&size=609x260&markers=55.9464543,-3.2009776");
   background-position: center;
 }
 
