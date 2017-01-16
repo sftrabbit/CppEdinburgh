@@ -15,3 +15,19 @@
     - name: Email
       url: mailto:tartanllama@gmail.com
   bio: GPGPU tools engineer and metaprogramming nerd. Get in touch if you want guidance on compilers, debuggers, profilers, general modern C++, templates, standardisation or C++ blogging.
+  
+- name: Gordon Brown
+  position: Staff Software Engineer, SYCL, Codeplay
+  links:
+    - name: Twitter
+      url: https://twitter.com/AerialMantis
+    - name: Email
+      url: mailto:aerialmantis@gmail.com
+  bio: I am a heterogeneous runtime engineer, contributor to the SYCL and C++ standards and modern C++ enthusiast. Get in touch if you would like guidance on heterogeneous computing, programming models, OpenCL, SYCL, modern C++, templates, standardization, or job applications in any of these areas.
+
+- name: Peter Žužek
+  position: Software Engineer, SYCL, Codeplay
+  links:
+    - name: Email
+      url: mailto:peterzuzek@gmail.com
+  bio: I started learning C++ when I was 15 and have always been pretty passionate about it, including all the recent development with C++11 and upwards. Professionally I've had a C++ internship for about a year and now as a full time employee (at Codeplay) for nine months.
