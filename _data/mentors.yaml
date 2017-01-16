@@ -6,3 +6,12 @@
 #    - name: Email
 #      url: mailto:sftrabbit@gmail.com
 #  bio: Sed efficitur lacus tincidunt urna rhoncus aliquet. Nam laoreet sapien vitae dui faucibus cursus. Praesent consectetur condimentum libero, id pellentesque arcu volutpat vel. Praesent lacinia purus id efficitur tristique.
+
+- name: Simon Brand
+  position: Staff Software Engineer, Codeplay
+  links:
+    - name: Twitter
+      url: https://twitter.com/TartanLlama
+    - name: Email
+      url: mailto:tartanllama@gmail.com
+  bio: GPGPU tools engineer and metaprogramming nerd. Get in touch if you want guidance on compilers, debuggers, profilers, general modern C++, templates, standardisation or C++ blogging.
