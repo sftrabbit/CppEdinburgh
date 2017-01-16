@@ -34,8 +34,17 @@ $size-gutter-width: 45px, 35px, 0px;
 	                            * $column;
 }
 
+@mixin clearfix {
+	&::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
 .row {
 	@include clearfix;
+
 	margin-left: (-(gutter-width(normal)));
 	padding-bottom: 2.5em;
 
@@ -81,6 +90,7 @@ $size-gutter-width: 45px, 35px, 0px;
 
 		@media (max-width: upper-limit(flow)) {
 			@include clearfix;
+
 			margin-bottom: 3.5em;
 			width: column-width-n(flow, $i);
 

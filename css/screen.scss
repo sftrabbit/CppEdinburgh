@@ -1,6 +1,6 @@
-@import "compass/reset";
-@import "compass/utilities/general/clearfix";
-
+---
+---
+@import 'reset';
 @import 'layout';
 
 body {
@@ -144,6 +144,7 @@ section h1 {
 
 ul.social {
 	@include clearfix;
+
 	margin: 0;
 	list-style-type: none;
 
