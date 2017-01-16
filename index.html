@@ -3,13 +3,13 @@ layout: default
 ---
 			<div class="container">
 				<div class="row">
-					<div class="column-2">
+					<div class="column-4">
 						<h1>Meet-ups</h1>
 						<p>Join us at C++ Edinburgh for some great talks and to hang out with local C++ developers. Everyone's welcome!</p>
 						<p><b>To find out about our next meet-ups</b>, join us on <a href="https://www.meetup.com/cppedinburgh/">Meetup.com</a> or our <a href="https://groups.google.com/forum/#!forum/cppedinburgh">mailing list</a> or follow us on <a href="http://twitter.com/cppedinburgh">Twitter</a> or <a href="https://plus.google.com/103727381682703513095">Google+</a>.</p>
 						<p><b>Interested in doing a talk?</b> Whether you have some interesting C++ experiences or projects or would just like to spread some knowledge, we'd love to have you as a speaker! No need to be an expert &mdash; C++ Edinburgh is a friendly environment and great opportunity to practise your presentation skills and get feedback. If you'd like to do a talk, <a href="http://goo.gl/forms/QrOJuHCe87">let us know</a>!</p>
 					</div>
-					<section class="column-1 sponsors">
+					<section class="column-2 sponsors">
 						<h1>Thanks to our sponsors</h1>
 						<ul>
 							<li><a href="https://www.codeplay.com/"><img src="/images/codeplay.png" alt="CodePlay"></a></li>
@@ -21,14 +21,14 @@ layout: default
 			<section class="upcoming">
 				<div class="container">
 					<div class="row">
-						<div class="column-1">
+						<div class="column-2">
 							<hgroup>
 								<h2>Upcoming meet-up</h2>
 								<h1>Details Coming Soon</h1>
 							</hgroup>
 							<p>Free entry. Food and refreshments provided.</p>
 						</div>
-						<div class="column-2 map">
+						<div class="column-4 map">
 							<a href="#"></a>
 						</div>
 					</div>
@@ -38,7 +38,7 @@ layout: default
 {% for event in site.data.events.previous %}
 	{% assign timestamp = event.datetime | date: "%Y%m" %}
 				<div class="row">
-					<div class="column-1">
+					<div class="column-2">
 						<hgroup>
 							<h1 datetime="{{ event.datetime | date_to_xmlschema }}">
 	{% assign day = event.datetime | date: "%-d"  %}
@@ -60,9 +60,9 @@ layout: default
 		{% endfor %}
 	{% endif %}
 					</div>
-					<div class="column-2">
+					<div class="column-4">
 	{% for talk in event.talks %}
-						<div class="column-1">
+						<div class="column-2">
 		{% if talk.url == null %}
 			{% capture talk_url %}/slides/{{ timestamp }}-{{ talk.id }}.pdf{% endcapture %}
 		{% else %}
