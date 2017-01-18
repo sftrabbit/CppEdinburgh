@@ -31,3 +31,12 @@
     - name: Email
       url: mailto:peterzuzek@gmail.com
   bio: I started learning C++ when I was 15 and have always been pretty passionate about it, including all the recent development with C++11 and upwards. Professionally I've had a C++ internship for about a year and now as a full time employee (at Codeplay) for nine months.
+
+- name: Rui Figueira
+  position: Senior Software Engineer at Cloudgine Ltd.
+  links:
+    - name: Twitter
+      url: https://twitter.com/RuiMVFigueira
+    - name: Email
+      url: mailto:ruimvfigueira@gmail.com
+  bio: About 20 years experience with C++, but still learning.
