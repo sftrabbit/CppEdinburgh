@@ -19,17 +19,28 @@ layout: default
 				</div>
 			</div>
 			<section class="upcoming">
+{% assign upcoming = site.data.events.upcoming %}
 				<div class="container">
 					<div class="row">
 						<div class="column-2">
 							<hgroup>
-								<h2>Upcoming meet-up</h2>
-								<h1>Details Coming Soon</h1>
+								<h2>Upcoming mini meet-up</h2>
+								<h1 datetime="{{ upcoming.datetime | date_to_xmlschema }}">
+{% assign day = upcoming.datetime | date: "%-d"  %}
+{% case day %}
+	{% when '1' or '21' or '31' %}{{ day }}st
+	{% when '2' or '22' %}{{ day }}nd
+	{% when '3' or '23' %}{{ day }}rd
+	{% else %}{{ day }}th
+{% endcase %}
+{{ upcoming.datetime | date: "%B %Y" }}
+								</h1>
 							</hgroup>
-							<p>Free entry. Food and refreshments provided.</p>
+							<p class="location">7pm at <img src="/images/location.png" alt="Location:"> <a href="{{ upcoming.location.map_url }}">{{ upcoming.location.name }}</a></p>
+							<p><b>Mini meet-up</b> &mdash; no talks - let's chat about C++ over some food and drinks!</p>
 						</div>
 						<div class="column-4 map">
-							<a href="#"></a>
+							<a href="{{ upcoming.location.map_url }}"></a>
 						</div>
 					</div>
 				</div>
