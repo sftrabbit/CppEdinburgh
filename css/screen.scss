@@ -176,6 +176,10 @@ section.upcoming, section.previous {
 			line-height: 1.1em;
 		}
 	}
+
+	.row .row {
+		padding-bottom: 0;
+	}
 }
 
 section.upcoming {
