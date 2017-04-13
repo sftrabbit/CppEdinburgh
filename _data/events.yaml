@@ -4,6 +4,20 @@ upcoming:
     name: Codeplay, Level C, Argyle House, Lady Lawson St., EH3 9DR
     map_url: https://www.google.co.uk/maps/place/Codeplay+Software+Ltd./@55.9464558,-3.2020719,18z/data=!3m1!4b1!4m5!3m4!1s0x4887c78dd4738ad1:0x3110196f7e4a9d6f!8m2!3d55.9464543!4d-3.2009776
 previous:
+  - datetime: 2017-04-10T19:00:00Z
+    location:
+      name: Codeplay, Level C, Argyle House, Lady Lawson St., EH3 9DR
+      map_url: https://www.google.co.uk/maps/place/Codeplay+Software+Ltd./@55.9464558,-3.2020719,18z/data=!3m1!4b1!4m5!3m4!1s0x4887c78dd4738ad1:0x3110196f7e4a9d6f!8m2!3d55.9464543!4d-3.2009776
+    talks:
+      - title: "Towards Composable GPU Programming: Programming GPUs with Eager Actions and Lazy Views"
+        speaker: Michel Steuwer, The University of Edinburgh
+        id: towards-composable-gpu-programming
+      - title: "Why the compiler broke your program"
+        speaker: Peter Brett, LiveCode
+        id: compiler-broke-your-program
+      - title: "C++ Binary Dependency Management with Gradle"
+        speaker: Hugh Greene, Toshiba Medical
+        id: binary-dependency-management-gradle
   - datetime: 2017-02-06T19:00:00Z
     location:
       name: OX184, Cowgate, Edinburgh, EH1 1JJ
