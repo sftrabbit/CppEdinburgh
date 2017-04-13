@@ -81,7 +81,11 @@ layout: default
 					<div class="column-4">
 	{% if event.talks != null %}
 		{% for talk in event.talks %}
-						<div class="column-2">
+			{% assign loopindex = forloop.index0 | modulo: 2 %}
+			{% if loopindex == 0 %}
+						<div class="row">
+			{% endif %}
+							<div class="column-2">
 			{% if talk.url == null %}
 				{% capture talk_url %}/slides/{{ timestamp }}-{{ talk.id }}.pdf{% endcapture %}
 			{% else %}
@@ -94,7 +98,10 @@ layout: default
 			{% endif %}
 							<a href="{{ talk_url }}"><img class="thumbnail" src="/images/thumbnails/{{ timestamp }}-{{ talk.id }}.png" alt="Slides for {{ talk.title }}"></a>
 							<p><a href="{{ talk_url }}">{{ talk.title }}</a> {{ link }} &mdash; <i>{{ talk.speaker }}</i></p>
+							</div>
+			{% if loopindex == 1 or forloop.last %}
 						</div>
+			{% endif %}
 		{% endfor %}
 	{% endif %}
 					</div>
