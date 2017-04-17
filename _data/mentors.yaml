@@ -47,4 +47,10 @@
     - name: Email
       url: mailto:k.chalmers@napier.ac.uk
   bio: I am currently a Senior Lecturer in Software Engineering at Edinburgh Napier University. My background is in concurrency and parallel systems, and I know quite a bit about the C++ memory model and programming concurrent applications in C++, as well as a good knowledge of various parallel approaches (e.g. OpenMP, CUDA, MPI, etc.). As a lecturer, I have developed our Games Development programme at Edinburgh Napier, and have developed a framework for computer graphics in OpenGL and a C++ game engine. As a software engineer, I have good knowledge and understanding of engineering approaches and have a good working knowledge of OO principles, etc. in C++. I also currently teach C and C++ to our first-year students and therefore have knowledge and material for teaching beginners as well as more experienced programmers.
-      
+  
+- name: Benoit Chauvin
+  position: Asset Pipeline Programmer
+  links:
+    - name: Email
+      url: benoit.chauvin@gmail.com
+  bio: Spend 10 years in the medical imaging industry as a R&D Engineer then moved to the Video Game industry as an Asset Pipeline Programmer. Knows C++/C# still learning the new fancy syntax of C++11/14/17. Really keen on sharing my years of experience on being ask to do something for yesterday and managing to do it.
