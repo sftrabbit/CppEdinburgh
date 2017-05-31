@@ -1,5 +1,8 @@
 upcoming:
   datetime: 2017-06-12T19:00:00Z
+  location:
+    name: OX184, Cowgate, Edinburgh, EH1 1JJ
+    map_url: https://www.google.co.uk/maps/place/OX184/@55.9487,-3.1903887,17z/data=!3m1!4b1!4m5!3m4!1s0x4887c78509801e65:0xb62f16edc10a441c!8m2!3d55.9487!4d-3.1882
 previous:
   - datetime: 2017-04-10T19:00:00Z
     location:
