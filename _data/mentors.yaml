@@ -51,3 +51,14 @@
 - name: Benoit Chauvin
   position: Asset Pipeline Programmer
   bio: Spend 10 years in the medical imaging industry as a R&D Engineer then moved to the Video Game industry as an Asset Pipeline Programmer. Knows C++/C# still learning the new fancy syntax of C++11/14/17. Really keen on sharing my years of experience on being ask to do something for yesterday and managing to do it.
+  
+- name: Christopher Di Bella
+  position: Software Engineer, Codeplay
+  links:
+    - name: Twitter
+      url: @cjdb_ns
+    - name: Email
+      url: cjdb.ns@gmail.com
+    - name: Slack (@cjdb)
+      url: cpplang.slack.com
+  bio: Software engineer for Codeplay's Runtime Technology. Previously a university tutor for UNSW Sydney's Advanced C++ Programming course. If emailing me please put "[Edinburgh C++]" at the start of your subject line to avoid going into spam.
