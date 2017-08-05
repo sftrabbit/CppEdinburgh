@@ -58,7 +58,7 @@
     - name: Twitter
       url: https://twitter.com/cjdb_ns
     - name: Email
-      url: cjdb.ns@gmail.com
+      url: mailto:cjdb.ns@gmail.com
     - name: Slack (@cjdb)
-      url: cpplang.slack.com
+      url: https://cpplang.slack.com
   bio: Software engineer for Codeplay's Runtime Technology. Previously a university tutor for UNSW Sydney's Advanced C++ Programming course. If emailing me please put "[Edinburgh C++]" at the start of your subject line to avoid going into spam.
