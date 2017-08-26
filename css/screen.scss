@@ -287,22 +287,22 @@ section.upcoming {
 	}
 }
 
-.mentorships {
-	.button-container {
-		padding: 0.5em 0;
-		text-align: center;
-	}
-}
-
 .mentors {
+	background-color: #fff;
 	list-style-type: none;
 	margin: 0;
+	padding: 1em 0;
+	border-radius: 5px;
 
 	li {
 		margin-bottom: 1em;
 	}
 
 	section {
+		div > * {
+			padding: 0 1em;
+		}
+
 		&.row {
 			padding: 0;
 		}
