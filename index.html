@@ -38,16 +38,14 @@ layout: default
 {{ upcoming.datetime | date: "%B %Y" }}
 								</h1>
 							</hgroup>
-							<p class="location">7pm at <img src="/images/location.png" alt="Location:"> <a href="{{ upcoming.location.map_url }}">{{ upcoming.location.name }}</a></p>
-							<p>Free entry. Food and refreshments provided.</p>
-							<ul>
-								<li>Minimal RPC framework with modern C++ – <i>Rui Figueira, Cloudgine</i></li>
-								<li>Modern C++ Testing with Catch2 — <i>Phil Nash, JetBrains</i></li>
-							</ul>
-							<p><a href="https://www.meetup.com/cppedinburgh/events/240080355/" class="button">RSVP on Meetup.com</a></p>
+{% if upcoming.location.name != null %}
+							<p class="location">7pm at <img src="/images/location.png" alt="Location:"> <a href="{{ upcoming.location.map.url }}">{{ upcoming.location.name }}</a></p>
+{% endif %}
+							{{ upcoming.details }}
+							<p><a href="https://www.meetup.com/cppedinburgh/events/{{ upcoming.meetup_id }}/" class="button">RSVP on Meetup.com</a></p>
 						</div>
 						<div class="column-4 map">
-							<a href="{{ upcoming.location.map_url }}"></a>
+							<a href="{{ upcoming.location.map.url }}" style="background-image: url({{ upcoming.location.map.image_url }})"></a>
 						</div>
 					</div>
 				</div>
@@ -69,14 +67,22 @@ layout: default
 	{{ event.datetime | date: "%B %Y" }}
 							</h1>
 						</hgroup>
-						<p class="location"><img src="/images/location.png" alt="Location:"> <a href="{{ event.location.map_url }}">{{ event.location.name }}</a></p>
+						<p class="location"><img src="/images/location.png" alt="Location:"> <a href="{{ event.location.map.url }}">{{ event.location.name }}</a></p>
 	{% if event.intro_talks == null %}
 		{% if event.talks != null %}
-						<a href="/slides/{{ timestamp }}-intro.pdf"><img class="thumbnail mini" src="/images/thumbnails/201503-welcome-to-cpp-edinburgh.png" alt="Slides for Welcome to C++ Edinburgh"></a>
+						<a href="/slides/{{ timestamp }}-intro.pdf">
+							<div class="thumbnail mini">
+								<img src="/images/thumbnails/201503-welcome-to-cpp-edinburgh.png" alt="Slides for Welcome to C++ Edinburgh">
+							</div>
+						</a>
 		{% endif %}
 	{% else %}
 		{% for intro_talk in event.intro_talks %}
-						<a href="/slides/{{ timestamp }}-{{ intro_talk.id }}.pdf"><img class="thumbnail mini" src="/images/thumbnails/{{ timestamp }}-{{ intro_talk.id }}.png" alt="Slides for {{ intro_talk.title }}"></a>
+						<a href="/slides/{{ timestamp }}-{{ intro_talk.id }}.pdf">
+							<div class="thumbnail mini">
+								<img src="/images/thumbnails/{{ timestamp }}-{{ intro_talk.id }}.png" alt="Slides for {{ intro_talk.title }}">
+							</div>
+						</a>
 		{% endfor %}
 	{% endif %}
 					</div>
@@ -88,18 +94,32 @@ layout: default
 						<div class="row">
 			{% endif %}
 							<div class="column-2">
+			{% capture slides_url %}/slides/{{ timestamp }}-{{ talk.id }}.pdf{% endcapture %}
 			{% if talk.url == null %}
-				{% capture talk_url %}/slides/{{ timestamp }}-{{ talk.id }}.pdf{% endcapture %}
+				{% if talk.youtube_id == null %}
+					{% assign talk_url = slides_url %}
+				{% else %}
+					{% capture talk_url %}https://www.youtube.com/watch?v={{ talk.youtube_id }}{% endcapture %}
+				{% endif %}
 			{% else %}
 				{% assign talk_url = talk.url %}
+			{% endif %}
+			{% if talk.youtube_id == null %}
+				{% assign slides_link = "" %}
+			{% else %}
+				{% capture slides_link %}(<a href="{{ slides_url }}">slides</a>){% endcapture %}
 			{% endif %}
 			{% if talk.link == null %}
 				{% assign link = "" %}
 			{% else %}
 				{% capture link %}(<a href="{{ talk.link.url }}">{{ talk.link.title }}</a>){% endcapture %}
 			{% endif %}
-							<a href="{{ talk_url }}"><img class="thumbnail" src="/images/thumbnails/{{ timestamp }}-{{ talk.id }}.png" alt="Slides for {{ talk.title }}"></a>
-							<p><a href="{{ talk_url }}">{{ talk.title }}</a> {{ link }} &mdash; <i>{{ talk.speaker }}</i></p>
+							<a href="{{ talk_url }}">
+								<div class="thumbnail {% if talk.youtube_id != null %}video{% endif %}">
+									<img src="/images/thumbnails/{{ timestamp }}-{{ talk.id }}.png" alt="Slides for {{ talk.title }}">
+								</div>
+							</a>
+							<p><a href="{{ talk_url }}">{{ talk.title }}</a> {{ slides_link }} {{ link }} &mdash; <i>{{ talk.speaker }}</i></p>
 							</div>
 			{% if loopindex == 1 or forloop.last %}
 						</div>

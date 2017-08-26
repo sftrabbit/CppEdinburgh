@@ -1,17 +1,39 @@
 upcoming:
-  datetime: 2017-08-14T19:00:00Z
+  datetime: 2017-10-09T19:00:00Z
+  details: |
+    <p>Social meet-up at a local bar/eatery. Free entry.</p>
+    <p>More details coming soon.</p>
   location:
-    name: Codeplay, Level C, Argyle House, Lady Lawson St., EH3 9DR
-    map_url: https://www.google.co.uk/maps/place/Codeplay+Software+Ltd./@55.9464558,-3.2020719,18z/data=!3m1!4b1!4m5!3m4!1s0x4887c78dd4738ad1:0x3110196f7e4a9d6f!8m2!3d55.9464543!4d-3.2009776
+    map:
+      url: "#"
+      image_url: https://maps.googleapis.com/maps/api/staticmap?center=55.94944012,-3.19577694&zoom=12&size=609x260
+  meetup_id: 237859519
 previous:
+  - datetime: 2017-08-14T19:00:00Z
+    location:
+      name: Codeplay, Level C, Argyle House, Lady Lawson St., EH3 9DR
+      map:
+        url: https://www.google.co.uk/maps/place/Codeplay+Software+Ltd./@55.9464558,-3.2020719,18z/data=!3m1!4b1!4m5!3m4!1s0x4887c78dd4738ad1:0x3110196f7e4a9d6f!8m2!3d55.9464543!4d-3.2009776
+        image_url: https://maps.googleapis.com/maps/api/staticmap?center=55.94944012,-3.19577694&zoom=14&size=609x260&markers=55.9464543,-3.2009776
+    talks:
+      - title: Minimal RPC framework with modern C++
+        speaker: Rui Figueira
+        id: minimal-rpc-framework
+        youtube_id: nb1fO4H9Q8w
+      - title: Modern C++ Testing with Catch2
+        speaker: Phil Nash
+        id: catch2
+        youtube_id: grC0S6ZK59U
   - datetime: 2017-06-12T19:00:00Z
     location:
       name: OX184, Cowgate, Edinburgh, EH1 1JJ
-      map_url: https://www.google.co.uk/maps/place/OX184/@55.9487,-3.1903887,17z/data=!3m1!4b1!4m5!3m4!1s0x4887c78509801e65:0xb62f16edc10a441c!8m2!3d55.9487!4d-3.1882
+      map:
+        url: https://www.google.co.uk/maps/place/OX184/@55.9487,-3.1903887,17z/data=!3m1!4b1!4m5!3m4!1s0x4887c78509801e65:0xb62f16edc10a441c!8m2!3d55.9487!4d-3.1882
   - datetime: 2017-04-10T19:00:00Z
     location:
       name: Codeplay, Level C, Argyle House, Lady Lawson St., EH3 9DR
-      map_url: https://www.google.co.uk/maps/place/Codeplay+Software+Ltd./@55.9464558,-3.2020719,18z/data=!3m1!4b1!4m5!3m4!1s0x4887c78dd4738ad1:0x3110196f7e4a9d6f!8m2!3d55.9464543!4d-3.2009776
+      map:
+        url: https://www.google.co.uk/maps/place/Codeplay+Software+Ltd./@55.9464558,-3.2020719,18z/data=!3m1!4b1!4m5!3m4!1s0x4887c78dd4738ad1:0x3110196f7e4a9d6f!8m2!3d55.9464543!4d-3.2009776
     talks:
       - title: "Towards Composable GPU Programming: Programming GPUs with Eager Actions and Lazy Views"
         speaker: Michel Steuwer, The University of Edinburgh
@@ -25,11 +47,13 @@ previous:
   - datetime: 2017-02-06T19:00:00Z
     location:
       name: OX184, Cowgate, Edinburgh, EH1 1JJ
-      map_url: https://www.google.co.uk/maps/place/OX184/@55.9487,-3.1903887,17z/data=!3m1!4b1!4m5!3m4!1s0x4887c78509801e65:0xb62f16edc10a441c!8m2!3d55.9487!4d-3.1882
+      map:
+        url: https://www.google.co.uk/maps/place/OX184/@55.9487,-3.1903887,17z/data=!3m1!4b1!4m5!3m4!1s0x4887c78509801e65:0xb62f16edc10a441c!8m2!3d55.9487!4d-3.1882
   - datetime: 2016-11-28T19:00:00Z
     location:
       name: Codeplay, Level C, Argyle House, Lady Lawson St., EH3 9DR
-      map_url: https://www.google.co.uk/maps/place/Codeplay+Software+Ltd./@55.9464558,-3.2020719,18z/data=!3m1!4b1!4m5!3m4!1s0x4887c78dd4738ad1:0x3110196f7e4a9d6f!8m2!3d55.9464543!4d-3.2009776
+      map:
+        url: https://www.google.co.uk/maps/place/Codeplay+Software+Ltd./@55.9464558,-3.2020719,18z/data=!3m1!4b1!4m5!3m4!1s0x4887c78dd4738ad1:0x3110196f7e4a9d6f!8m2!3d55.9464543!4d-3.2009776
     talks:
       - title: "Qt3D's ECS: An Entity-Component System in C++ and Qt"
         speaker: James Turner, KDAB
@@ -40,7 +64,8 @@ previous:
   - datetime: 2016-07-25T19:00:00+0100
     location:
       name: Cloudreach, 77 Montgomery St., EH7 5HZ
-      map_url: https://www.google.co.uk/maps/place/Cloudreach/@55.9593938,-3.1793091,17.5z/data=!4m2!3m1!1s0x4887c78a8f3ad8c7:0xb57e9c22ceefffa8
+      map:
+        url: https://www.google.co.uk/maps/place/Cloudreach/@55.9593938,-3.1793091,17.5z/data=!4m2!3m1!1s0x4887c78a8f3ad8c7:0xb57e9c22ceefffa8
     talks:
       - title: "Stack and Heap: Commonly Abused Terms"
         speaker: Simon Brand, Codeplay
@@ -51,7 +76,8 @@ previous:
   - datetime: 2016-03-08T19:00:00Z
     location:
       name: Cloudreach, 77 Montgomery St., EH7 5HZ
-      map_url: https://www.google.co.uk/maps/place/Cloudreach/@55.9593938,-3.1793091,17.5z/data=!4m2!3m1!1s0x4887c78a8f3ad8c7:0xb57e9c22ceefffa8
+      map:
+        url: https://www.google.co.uk/maps/place/Cloudreach/@55.9593938,-3.1793091,17.5z/data=!4m2!3m1!1s0x4887c78a8f3ad8c7:0xb57e9c22ceefffa8
     talks:
       - title: An Introduction to Template Metaprogramming
         speaker: Barney Dellar, Toshiba Medical
@@ -65,7 +91,8 @@ previous:
   - datetime: 2015-11-09T19:00:00Z
     location:
       name: Cloudreach, 77 Montgomery St., EH7 5HZ
-      map_url: https://www.google.co.uk/maps/place/Cloudreach/@55.9593938,-3.1793091,17.5z/data=!4m2!3m1!1s0x4887c78a8f3ad8c7:0xb57e9c22ceefffa8
+      map:
+        url: https://www.google.co.uk/maps/place/Cloudreach/@55.9593938,-3.1793091,17.5z/data=!4m2!3m1!1s0x4887c78a8f3ad8c7:0xb57e9c22ceefffa8
     talks:
       - title: "Ceph: a large open source C++ codebase"
         speaker: John Spray, Red Hat
@@ -76,7 +103,8 @@ previous:
   - datetime: 2015-08-06T19:00:00+0100
     location:
       name: Cloudreach, 77 Montgomery St., EH7 5HZ
-      map_url: https://www.google.co.uk/maps/place/Cloudreach/@55.9593938,-3.1793091,17.5z/data=!4m2!3m1!1s0x4887c78a8f3ad8c7:0xb57e9c22ceefffa8
+      map:
+        url: https://www.google.co.uk/maps/place/Cloudreach/@55.9593938,-3.1793091,17.5z/data=!4m2!3m1!1s0x4887c78a8f3ad8c7:0xb57e9c22ceefffa8
     talks:
       - title: Objects, Pointers and Polymorphism
         speaker: Neil Moore, Adobe
@@ -88,7 +116,8 @@ previous:
   - datetime: 2015-03-17T19:00:00Z
     location:
       name: Summerhall, EH9 1QH
-      map_url: https://www.google.co.uk/maps/place/Summerhall/@55.939842,-3.182285,17z/data=!3m1!4b1!4m2!3m1!1s0x4887c781e4eb45a5:0xe70e80791c72a03d
+      map:
+        url: https://www.google.co.uk/maps/place/Summerhall/@55.939842,-3.182285,17z/data=!3m1!4b1!4m2!3m1!1s0x4887c781e4eb45a5:0xe70e80791c72a03d
     talks:
       - title: The power of C++
         speaker: Joseph Mansfield
