@@ -39,6 +39,41 @@
 		<main>
 {{ content }}
 		</main>
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="column-3">
+						<h1>Contact</h1>
+						<p>To get in touch, contact us via <a href="mailto:cppedinburgh@gmail.com">email</a> or <a href="https://twitter.com/cppedinburgh">Twitter</a>.</p>
+					</div>
+					<div class="column-3">
+						<h1>Follow us</h1>
+						<ul class="social">
+							<li><a href="https://www.meetup.com/cppedinburgh/"><img src="/images/meetup.svg" alt="Meetup.com"></a></li>
+							<li><a href="https://twitter.com/cppedinburgh"><img src="/images/twitter.svg" alt="Twitter"></a></li>
+							<li><a href="https://www.youtube.com/channel/UC3MI-cTQcGTkwWsf6z0hldQ"><img src="/images/youtube.svg" alt="YouTube"></a></li>
+							<li><a href="https://groups.google.com/forum/#!forum/cppedinburgh"><img src="/images/email.svg" alt="Mailing List"></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="row volunteers">
+					<div class="column-6">
+						<h1>Organisers</h1>
+					</div>
+{% for volunteer in site.data.volunteers %}
+					<section class="column-2">
+						<div class="profile-photo"><img src="{{ volunteer.photo_url }}"></div>
+						<h1>{{ volunteer.name }}</h1>
+						<ul>
+	{% for link in volunteer.links %}
+							<li><a href="{{ link.url }}">{{ link.name }}</a></li>
+	{% endfor %}
+						</ul>
+					</section>
+{% endfor %}
+				</div>
+			</div>
+		</footer>
 		<script async>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
