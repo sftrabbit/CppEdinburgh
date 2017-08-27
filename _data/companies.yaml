@@ -1,1 +1,22 @@
-[]
+- name: Codeplay Software
+  address: >-
+    Codeplay Software Ltd., Argyle House, 3 Lady Lawson Street, Edinburgh, EH3
+    9DR
+  links:
+    - name: Website
+      url: 'http://www.codeplay.com'
+  description: >-
+    Codeplay is internationally recognized for expertise in heterogeneous
+    systems, developing open standards based compilers, runtimes, debuggers test
+    systems and other specialized tools.
+- name: Toshiba Medical Visualisation Systems
+  address: '2 Anderson Pl, Edinburgh, EH6 5NP'
+  links:
+    - name: Website
+      url: 'http://www.tmvse.com/'
+    - name: Jobs
+      url: 'https://www.tmvse.com/recruitment'
+  description: >-
+    TMVS designs and develops software that creates dynamic 3D images from the
+    output of CT, MRI and other scanners; these are used by clinicians to
+    improve the diagnosis of serious medical conditions.
