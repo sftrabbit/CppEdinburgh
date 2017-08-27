@@ -1,12 +1,3 @@
-#- name: Joseph Mansfield
-#  position: Software Developer, Cloudreach
-#  links:
-#    - name: Twitter
-#      url: https://twitter.com/sftrabbit
-#    - name: Email
-#      url: mailto:sftrabbit@gmail.com
-#  bio: Sed efficitur lacus tincidunt urna rhoncus aliquet. Nam laoreet sapien vitae dui faucibus cursus. Praesent consectetur condimentum libero, id pellentesque arcu volutpat vel. Praesent lacinia purus id efficitur tristique.
-
 - name: Simon Brand
   position: Staff Software Engineer, Codeplay
   links:
@@ -15,7 +6,7 @@
     - name: Email
       url: mailto:tartanllama@gmail.com
   bio: GPGPU tools engineer and metaprogramming nerd. Get in touch if you want guidance on compilers, debuggers, profilers, general modern C++, templates, standardisation or C++ blogging.
-  
+
 - name: Gordon Brown
   position: Staff Software Engineer, SYCL, Codeplay
   links:
@@ -40,18 +31,18 @@
     - name: Email
       url: mailto:ruimvfigueira@gmail.com
   bio: Senior Software Engineer at Cloudgine Ltd. About 20 years experience with C++, but still learning.
-  
+
 - name: Kevin Chalmers
   position: Lecturer at Edinburgh Napier University
   links:
     - name: Email
       url: mailto:k.chalmers@napier.ac.uk
   bio: I am currently a Senior Lecturer in Software Engineering at Edinburgh Napier University. My background is in concurrency and parallel systems, and I know quite a bit about the C++ memory model and programming concurrent applications in C++, as well as a good knowledge of various parallel approaches (e.g. OpenMP, CUDA, MPI, etc.). As a lecturer, I have developed our Games Development programme at Edinburgh Napier, and have developed a framework for computer graphics in OpenGL and a C++ game engine. As a software engineer, I have good knowledge and understanding of engineering approaches and have a good working knowledge of OO principles, etc. in C++. I also currently teach C and C++ to our first-year students and therefore have knowledge and material for teaching beginners as well as more experienced programmers.
-  
+
 - name: Benoit Chauvin
   position: Asset Pipeline Programmer
   bio: Spend 10 years in the medical imaging industry as a R&D Engineer then moved to the Video Game industry as an Asset Pipeline Programmer. Knows C++/C# still learning the new fancy syntax of C++11/14/17. Really keen on sharing my years of experience on being ask to do something for yesterday and managing to do it.
-  
+
 - name: Christopher Di Bella
   position: Software Engineer, Codeplay
   links:
