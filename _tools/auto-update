@@ -14,4 +14,6 @@ if ! git diff-index --quiet HEAD --; then
 
     git remote add origin-rw https://${GH_TOKEN}@github.com/sftrabbit/CppEdinburgh.git > /dev/null 2>&1
     git push --quiet origin-rw
+else
+    echo "No changes to push"
 fi
