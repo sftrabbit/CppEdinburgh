@@ -1,0 +1,31 @@
+---
+layout: default
+---
+			<div class="container">
+				<div class="row">
+					<div class="column-6">
+						<h1>Companies</h1>
+						<p>To add a company to this list or edit an existing entry, please do so in <a href="#">Tech In Scotland's companies directory</a> and ensure the company is marked as using C++. After some time, the company will appear here.</p>
+						<ul class="mentors">
+{% for company in site.data.companies %}
+							<li>
+								<section class="row">
+									<div class="column-2">
+										<h1>{{ company.name }}</h1>
+										<p class="location"><img src="/images/location.png" alt="Address:"> {{ company.address }}</p>
+										<ul>
+	{% for link in company.links %}
+											<li><a href="{{ link.url }}">{{ link.name }}</a></li>
+	{% endfor %}
+										</ul>
+									</div>
+									<div class="column-4">
+										<p>{{ company.description }}</p>
+									</div>
+								</section>
+							</li>
+{% endfor %}
+						</ul>
+					</div>
+				</div>
+			</div>

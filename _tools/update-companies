@@ -1,0 +1,98 @@
+#!/usr/bin/env node
+
+const equal = require('deep-equal')
+const fs = require('fs')
+const https = require('https')
+const yaml = require('js-yaml')
+const util = require('util')
+
+const COMPANIES_URL = 'https://find.techin.scot/api1/companies.techused-x.json'
+const DATA_PATH = '_data/companies.yaml'
+
+updateCompanies()
+
+async function updateCompanies () {
+  const companies = JSON.parse(await httpsGet(COMPANIES_URL)).data
+    .map(transformCompany)
+
+  const readFile = util.promisify(fs.readFile)
+  const writeFile = util.promisify(fs.writeFile)
+
+  const existingCompanies = yaml.safeLoad(await readFile(DATA_PATH))
+
+  const differences = []
+
+  for (const company of companies) {
+    const existingCompanyIndex = existingCompanies.findIndex((existingCompany) => {
+      return existingCompany.name === company.name
+    })
+
+    if (existingCompanyIndex !== -1) {
+      const existingCompany = existingCompanies.splice(existingCompanyIndex, 1)[0]
+      if (!equal(company, existingCompany)) {
+        differences.push({ type: 'Update', name: company.name })
+      }
+    } else {
+      differences.push({ type: 'Insert', name: company.name })
+    }
+  }
+
+  for (const remainingCompany of existingCompanies) {
+    differences.push({ type: 'Delete', name: remainingCompany.name })
+  }
+
+  if (differences.length > 0) {
+    const updatedCompaniesYaml = yaml.safeDump(companies)
+    await writeFile(DATA_PATH, updatedCompaniesYaml)
+
+    const output = differences.map((difference) => {
+      return `- ${difference.type} '${difference.name}'\n`
+    })
+
+    process.stdout.write(output.join(''))
+  } else {
+    console.log('No changes')
+    process.exit(1)
+  }
+}
+
+function transformCompany (company) {
+  const links = []
+
+  if (company.webpage) {
+    links.push({
+      name: 'Website',
+      url: company.webpage
+    })
+  }
+
+  if (company.jobs_webpage) {
+    links.push({
+      name: 'Jobs',
+      url: company.jobs_webpage
+    })
+  }
+
+  return {
+    name: company.title,
+    address: company.address.split('\n').join(', '),
+    links,
+    description: company.description
+  }
+}
+
+async function httpsGet (options) {
+  return new Promise((resolve, reject) => {
+    https.request(options, (responseStream) => {
+      let responseBody = ''
+
+      responseStream.on('data', function (chunk) {
+        responseBody += chunk
+      })
+
+      responseStream.on('end', function () {
+        resolve(responseBody)
+      })
+    }).end()
+  })
+}
