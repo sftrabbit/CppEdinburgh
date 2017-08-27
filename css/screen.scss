@@ -294,8 +294,13 @@ section.upcoming {
 	padding: 1em 0;
 	border-radius: 5px;
 
-	li {
+	> li {
 		margin-bottom: 1em;
+		border-bottom: 1px solid #ddd;
+
+		&:last-child {
+			border-bottom: 0;
+		}
 	}
 
 	section {
@@ -323,14 +328,15 @@ section.upcoming {
 
 			li {
 				display: inline-block;
-				margin-right: 1em
+				margin-right: 1em;
+				margin-bottom: 1em;
 			}
 		}
 	}
 }
 
 @media (max-width: upper-limit(flow)) {
-	body > header .column-2 {
+	body .column-2 {
 		margin-bottom: 0;
 	}
 }
