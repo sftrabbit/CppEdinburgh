@@ -3,13 +3,14 @@
 git config --global user.email "travis@travis-ci.org"
 git config --global user.name "Travis CI"
 
+git checkout $TRAVIS_BRANCH
 git reset --hard HEAD
 
 CHANGES=$(./_tools/update-companies)
 
 if ! git diff-index --quiet HEAD --; then
     git add -A
-    echo -e "[AUTO] Update companies\n\n$CHANGES" | git commit --file -
+    echo "[AUTO] Update companies\n\nTravis build: ${TRAVIS_BUILD_NUMBER}\n\n${CHANGES}" | git commit --file -
 
     git remote add origin-rw https://${GH_TOKEN}@github.com/sftrabbit/CppEdinburgh.git > /dev/null 2>&1
     git push --quiet origin-rw

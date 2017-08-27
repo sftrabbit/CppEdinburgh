@@ -1,0 +1,11 @@
+lang: node_js
+node_js:
+- node
+before_script:
+- nvm install 8
+- npm install js-yaml deep-equal
+script:
+- "./_tools/auto-update"
+env:
+  global:
+    secure: GCagH2cJyj1GDsMIvGWBf2p17qPeKHjXl3IajGq1DG5YupBDTtPcJFTdUjk1xGMlURMDUXy7qqQyoTkf4NmZdSwBj6CXRjUjPlnEiXi62ojPEeK+5JtJ0trfKc8PiuHK9VMJS0ftkrIue3vUova2AjUa/YxsKKzAzDkPZ9Ebwoc=
