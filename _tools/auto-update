@@ -9,7 +9,7 @@ git reset --hard HEAD
 CHANGES=$(./_tools/update-companies)
 
 if ! git diff-index --quiet HEAD --; then
-    git add -A
+    git add _data/companies.yaml
     echo "[AUTO] Update companies\n\nTravis build: ${TRAVIS_BUILD_NUMBER}\n\n${CHANGES}" | git commit --file -
 
     git remote add origin-rw https://${GH_TOKEN}@github.com/sftrabbit/CppEdinburgh.git > /dev/null 2>&1
