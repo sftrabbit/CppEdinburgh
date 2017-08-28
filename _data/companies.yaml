@@ -5,10 +5,30 @@
   links:
     - name: Website
       url: 'http://www.codeplay.com'
+    - name: Jobs
+      url: 'https://codeplay.com/company/careers/#choose-career'
   description: >-
     Codeplay is internationally recognized for expertise in heterogeneous
     systems, developing open standards based compilers, runtimes, debuggers test
     systems and other specialized tools.
+- name: Livecode Ltd
+  address: >-
+    LiveCode Ltd., 25a Thistle Street Lane South West, Edinburgh, Scotland, UK,
+    EH2 1EW
+  links:
+    - name: Website
+      url: 'https://livecode.com/'
+  description: >-
+    LiveCode, based in Edinburgh, Scotland, has a vision that everyone can code
+    and makes the open source LiveCode platform for building native mobile,
+    desktop and server applications.
+
+
+    The company is committed to promoting digital literacy – schools using the
+    platform have seen a doubling of uptake for their CS courses. Commercial
+    successes include both SMEs and Fortune 500 companies. LiveCode apps have
+    grossed over US $100 million and include #1 best sellers, enterprise
+    business systems, games, and productivity tools.
 - name: Toshiba Medical Visualisation Systems
   address: '2 Anderson Pl, Edinburgh, EH6 5NP'
   links:
