@@ -1,3 +1,13 @@
+- name: Adobe
+  address: 'Adobe Edinburgh, Vantage Point, 3 Cultins Road, Edinburgh EH11 4DF'
+  links:
+    - name: Website
+      url: 'http://www.adobe.com'
+    - name: Jobs
+      url: 'http://www.adobe.com/careers.html'
+  description: >-
+    Adobe is an international computing software company focussing on media,
+    graphics creativity, marketing and documents.
 - name: Codeplay Software
   address: >-
     Codeplay Software Ltd., Argyle House, 3 Lady Lawson Street, Edinburgh, EH3
@@ -11,6 +21,25 @@
     Codeplay is internationally recognized for expertise in heterogeneous
     systems, developing open standards based compilers, runtimes, debuggers test
     systems and other specialized tools.
+- name: IndigoVision
+  address: >-
+    IndigoVision Ltd, Charles Darwin House, The Edinburgh Technopole, Edinburgh
+    EH26 0PY, U.K.
+  links:
+    - name: Website
+      url: 'https://www.indigovision.com'
+    - name: Jobs
+      url: 'https://www.indigovision.com/careers/'
+  description: >-
+    IndigoVision works to keep people safe, providing software and hardware to
+    create end-to-end video security solutions. We are trusted in over 10,000
+    installations across the globe, including casinos, cities, banks, airports
+    and government.
+     
+    We are a technology led company. Our Engineering team is instrumental in
+    driving both our the business and the whole industry forward. We have been
+    building pioneering CCTV solutions since 1994 continually pushing boundaries
+    to make people safe.
 - name: Livecode Ltd
   address: >-
     LiveCode Ltd., 25a Thistle Street Lane South West, Edinburgh, Scotland, UK,
