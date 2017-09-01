@@ -8,6 +8,14 @@
   description: >-
     Adobe is an international computing software company focussing on media,
     graphics creativity, marketing and documents.
+- name: Cloudgine Ltd
+  address: '22A Calton Road, Edinburgh, EH8 8DP'
+  links:
+    - name: Website
+      url: 'http://www.cloudgine.com'
+    - name: Jobs
+      url: 'http://www.cloudgine.com/jobs.html'
+  description: null
 - name: Codeplay Software
   address: >-
     Codeplay Software Ltd., Argyle House, 3 Lady Lawson Street, Edinburgh, EH3
