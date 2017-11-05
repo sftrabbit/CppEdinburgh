@@ -8,6 +8,21 @@
   description: >-
     Adobe is an international computing software company focussing on media,
     graphics creativity, marketing and documents.
+- name: Broadridge Financial Solutions
+  address: 'Exchange Place 2, 5 Semple Street, Edinburgh, EH3 8BL'
+  links:
+    - name: Website
+      url: 'https://www.broadridge.com/intl/'
+    - name: Jobs
+      url: 'https://www.broadridge.com/intl/contact'
+  description: >-
+    Broadridge — a global company with $4 billion in revenue—is a leading
+    provider of technology and operations, communications, and data and
+    analytics to financial services firms including capital markets, wealth
+    management and asset management, and corporations. We’re at the forefront of
+    helping clients engage customers, navigate risk, optimize efficiency and
+    accelerate growth in a rapidly changing—and challenging—business
+    environment.
 - name: Cloudgine Ltd
   address: '22A Calton Road, Edinburgh, EH8 8DP'
   links:
@@ -29,6 +44,29 @@
     Codeplay is internationally recognized for expertise in heterogeneous
     systems, developing open standards based compilers, runtimes, debuggers test
     systems and other specialized tools.
+- name: 'Digirati '
+  address: 'Glasgow Headquarters , , 70 Pacific Quay, Glasgow G51 1DZ'
+  links:
+    - name: Website
+      url: 'https://digirati.com/'
+    - name: Jobs
+      url: 'https://digirati.com/about/careers/'
+  description: >-
+    Digirati  collaborate closely with cultural heritage, scholarly research and
+    publishing communities and strongly support the Open Science agenda.
+
+
+    We bring engineering and product design innovations for the preservation,
+    management, publishing and discovery of digital content and data. 
+
+
+    Specialising in Open Source software and Open Standards, we bring together
+    the necessary design, architecture, integration and engineering practices
+    across most common current technology stacks.
+
+
+    Digirati’s success is down to our talented people. We are always on the
+    lookout for ambitious individuals to join our growing team
 - name: IndigoVision
   address: >-
     IndigoVision Ltd, Charles Darwin House, The Edinburgh Technopole, Edinburgh
@@ -66,6 +104,16 @@
     successes include both SMEs and Fortune 500 companies. LiveCode apps have
     grossed over US $100 million and include #1 best sellers, enterprise
     business systems, games, and productivity tools.
+- name: ParaFormance Technologies Ltd
+  address: 'Jack Cole Building, School of Computer Science, St Andrews, Fife. KY16 9SX'
+  links:
+    - name: Website
+      url: 'https://www.paraformance.com'
+  description: >-
+    At ParaFormance we develop software tools to democratize the parallelisation
+    of C++ applications. ParaFormance offers C++ software developers a unique
+    toolset to maximise performance of their applications using parallel
+    multi-core technology.
 - name: Toshiba Medical Visualisation Systems
   address: '2 Anderson Pl, Edinburgh, EH6 5NP'
   links:
