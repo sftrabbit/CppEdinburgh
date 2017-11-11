@@ -1,14 +1,20 @@
 upcoming:
-  datetime: 2017-10-09T19:00:00Z
+  datetime: 2017-12-11T19:00:00Z
   details: |
-    <p>Social meet-up at a local bar/eatery. Free entry.</p>
-    <p>More details coming soon.</p>
+    <p>Free entry. Food and refreshments provided.</p>
+    <p>Talk details coming soon.</p>
   location:
+    name: Codeplay, Level C, Argyle House, Lady Lawson St., EH3 9DR
     map:
-      url: "#"
-      image_url: https://maps.googleapis.com/maps/api/staticmap?center=55.94944012,-3.19577694&zoom=12&size=609x260
-  meetup_id: 237859519
+      url: https://www.google.co.uk/maps/place/Codeplay+Software+Ltd./@55.9464558,-3.2020719,18z/data=!3m1!4b1!4m5!3m4!1s0x4887c78dd4738ad1:0x3110196f7e4a9d6f!8m2!3d55.9464543!4d-3.2009776
+      image_url: https://maps.googleapis.com/maps/api/staticmap?center=55.94944012,-3.19577694&zoom=14&size=609x260&markers=55.9464543,-3.2009776
+  meetup_id: 240871736
 previous:
+  - datetime: 2017-10-09T19:00:00Z
+    location:
+      name: OX184, Cowgate, Edinburgh, EH1 1JJ
+      map:
+        url: https://www.google.co.uk/maps/place/OX184/@55.9487,-3.1903887,17z/data=!3m1!4b1!4m5!3m4!1s0x4887c78509801e65:0xb62f16edc10a441c!8m2!3d55.9487!4d-3.1882
   - datetime: 2017-08-14T19:00:00Z
     location:
       name: Codeplay, Level C, Argyle House, Lady Lawson St., EH3 9DR
