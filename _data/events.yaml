@@ -1,8 +1,12 @@
 upcoming:
   datetime: 2017-12-11T19:00:00Z
   details: |
-    <p>Free entry. Food and refreshments provided.</p>
-    <p>Talk details coming soon.</p>
+    <p>Free entry. Food and refreshments provided. Talks:</p>
+    <ul>
+      <li>C++ Samples — <i>Joseph Mansfield</i></li>
+      <li>Quiver: a cross-platform pseudo-3D game engine — <i>Rachel Crawford</i></li>
+      <li>Learning C++ Isn't Difficult, Teaching C++ is the Trick — <i>Christopher Di Bella</i></li>
+    </ul>
   location:
     name: Codeplay, Level C, Argyle House, Lady Lawson St., EH3 9DR
     map:
