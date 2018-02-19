@@ -29,7 +29,7 @@
     - name: Website
       url: 'http://www.cloudgine.com'
     - name: Jobs
-      url: 'http://www.cloudgine.com/jobs.html'
+      url: 'https://cloudgine.com/careers/'
   description: null
 - name: Codeplay Software
   address: >-
@@ -114,6 +114,39 @@
     of C++ applications. ParaFormance offers C++ software developers a unique
     toolset to maximise performance of their applications using parallel
     multi-core technology.
+- name: ShareIn
+  address: 'CodeBase, 38 Castle Terrace, Edinburgh EH3 9DZ'
+  links:
+    - name: Website
+      url: 'https://www.sharein.com/'
+  description: >-
+    Raise Capital Your Way
+
+
+    Uniquely positioned we offer a full crowdfunding “turnkey” solution offering
+    both a technology and a compliance service. This allows you to focus on what
+    you do best – drive your business forward.
+
+
+    With us you can directly crowdfund from your own website or run your own
+    crowdfunding platform.  We are very well placed to assist you over the
+    crowdfunding hurdles. We fully understand what is required and can transfer
+    this knowledge, experience and expertise to you as part of our valuable and
+    unique value-add services.
+
+
+    FCA AUTHORISATION – We are authorised and regulated by the UK Financial
+    Conduct Authority (FRN 603332). We take our responsibilities very seriously
+    and feel that appropriate regulation is key in this nascent industry.
+
+
+    EXPERTISE – We are a founding member of the UK Crowdfunding Association. We
+    are considered to be one of the UK’s leading experts in crowdfunding
+    technology and solutions.
+
+
+    TECHNOLOGY CORE TO OUR BUSINESS – Unlike some platforms we don’t outsource
+    our development, it’s all created by our experienced in-house team.
 - name: Toshiba Medical Visualisation Systems
   address: '2 Anderson Pl, Edinburgh, EH6 5NP'
   links:
