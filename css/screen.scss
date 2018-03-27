@@ -65,6 +65,10 @@ ul {
 	margin-left: 1.5em;
 	list-style-type: disc;
 	margin-bottom: 1.5em;
+
+	li {
+		margin-bottom: 0.5em;
+	}
 }
 
 i {
@@ -220,7 +224,6 @@ section.upcoming {
 		height: 276px;
 		max-width: 625px;
 		display: block;
-		border: 8px solid #dcdcdc;
 		box-sizing: border-box;
 		-moz-box-sizing: border-box;
 		-webkit-box-sizing: border-box;
