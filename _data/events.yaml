@@ -1,15 +1,27 @@
 upcoming:
-  datetime: 2018-02-12T19:00:00Z
-  details: |
-    <p>Join us at a local bar/eatery to chat about C++ with the local community and take part in our C++ quiz!</p>
-    <p>Food and drink not provided.</p>
+  datetime: 2018-04-09T19:00:00Z
   location:
-    name: Beehive Inn, 19-20 Grassmarket, Edinburgh, EH1 2JU
+    name: Codeplay, Level C, Argyle House, Lady Lawson St., EH3 9DR
     map:
-      url: https://www.google.co.uk/maps/place/Beehive+Inn/@55.9474211,-3.1993579,17z/data=!3m1!4b1!4m5!3m4!1s0x4887c79a355b59dd:0x872dddf203c24c6a!8m2!3d55.9474211!4d-3.1971692
-      image_url: https://maps.googleapis.com/maps/api/staticmap?center=55.94944012,-3.19577694&zoom=14&size=609x260&markers=55.947421,-3.197169
-  meetup_id: 240871736
+      url: https://www.google.co.uk/maps/place/Codeplay+Software+Ltd./@55.9464558,-3.2020719,18z/data=!3m1!4b1!4m5!3m4!1s0x4887c78dd4738ad1:0x3110196f7e4a9d6f!8m2!3d55.9464543!4d-3.2009776
+      image_url: https://maps.googleapis.com/maps/api/staticmap?center=55.9464558,-3.2020719&zoom=14&size=609x260&markers=55.9464558,-3.2020719
+  meetup_id: 246546953
+  details: |
+    <p>Free entry. Food and refreshments provided. Talks:</p>
+    <ul>
+      <li>Why advances in Automotive Driving Aids Systems (ADAS) + efficient C++ meet safety concerns — <i>Illya Rudkin, Codeplay</i></li>
+      <li>A system that I used to know — <i>Benoit Chauvin</i></li>
+    </ul>
 previous:
+  - datetime: 2018-02-12T19:00:00Z
+    details: |
+      <p>Join us at a local bar/eatery to chat about C++ with the local community and take part in our C++ quiz!</p>
+      <p>Food and drink not provided.</p>
+    location:
+      name: Beehive Inn, 19-20 Grassmarket, Edinburgh, EH1 2JU
+      map:
+        url: https://www.google.co.uk/maps/place/Beehive+Inn/@55.9474211,-3.1993579,17z/data=!3m1!4b1!4m5!3m4!1s0x4887c79a355b59dd:0x872dddf203c24c6a!8m2!3d55.9474211!4d-3.1971692
+    meetup_id: 240871736
   - datetime: 2017-12-11T19:00:00Z
     location:
       name: Codeplay, Level C, Argyle House, Lady Lawson St., EH3 9DR
