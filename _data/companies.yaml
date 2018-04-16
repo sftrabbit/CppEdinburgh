@@ -23,6 +23,17 @@
     helping clients engage customers, navigate risk, optimize efficiency and
     accelerate growth in a rapidly changing—and challenging—business
     environment.
+- name: Canon Medical Research Europe
+  address: '2 Anderson Pl, Edinburgh, EH6 5NP'
+  links:
+    - name: Website
+      url: 'https://research.eu.medical.canon/'
+    - name: Jobs
+      url: 'https://research.eu.medical.canon/recruitment'
+  description: >-
+    Canon Medical designs and develops software that creates dynamic 3D images
+    from the output of CT, MRI and other scanners; these are used by clinicians
+    to improve the diagnosis of serious medical conditions.
 - name: Cloudgine Ltd
   address: '22A Calton Road, Edinburgh, EH8 8DP'
   links:
@@ -147,14 +158,3 @@
 
     TECHNOLOGY CORE TO OUR BUSINESS – Unlike some platforms we don’t outsource
     our development, it’s all created by our experienced in-house team.
-- name: Toshiba Medical Visualisation Systems
-  address: '2 Anderson Pl, Edinburgh, EH6 5NP'
-  links:
-    - name: Website
-      url: 'http://www.tmvse.com/'
-    - name: Jobs
-      url: 'https://www.tmvse.com/recruitment'
-  description: >-
-    TMVS designs and develops software that creates dynamic 3D images from the
-    output of CT, MRI and other scanners; these are used by clinicians to
-    improve the diagnosis of serious medical conditions.
