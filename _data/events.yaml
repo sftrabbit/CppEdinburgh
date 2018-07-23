@@ -1,19 +1,33 @@
 upcoming:
-  datetime: 2018-04-09T19:00:00Z
+  datetime: 2018-08-13T19:00:00Z
   location:
     name: Codeplay, Level C, Argyle House, Lady Lawson St., EH3 9DR
     map:
       url: https://www.google.co.uk/maps/place/Codeplay+Software+Ltd./@55.9464558,-3.2020719,18z/data=!3m1!4b1!4m5!3m4!1s0x4887c78dd4738ad1:0x3110196f7e4a9d6f!8m2!3d55.9464543!4d-3.2009776
       image_url: https://maps.googleapis.com/maps/api/staticmap?center=55.9464558,-3.2020719&zoom=14&size=609x260&markers=55.9464558,-3.2020719
-  meetup_id: 246546953
+  meetup_id: 246546962
   details: |
-    <p>Free entry. Food and refreshments provided. Talks:</p>
-    <ul>
-      <li>Why advances in Automotive Driving Aids Systems (ADAS) + efficient C++ meet safety concerns — <i>Illya Rudkin, Codeplay</i></li>
-      <li>Daily C++ — <i>Barney Dellar, Canon Medical</i></li>
-      <li>A system that I used to know — <i>Benoit Chauvin</i></li>
-    </ul>
+    <p>Free entry. Food and refreshments provided.</p>
+    <p>Talks details coming soon.</p>
 previous:
+  - datetime: 2018-04-09T19:00:00Z
+    location:
+      name: Codeplay, Level C, Argyle House, Lady Lawson St., EH3 9DR
+      map:
+        url: https://www.google.co.uk/maps/place/Codeplay+Software+Ltd./@55.9464558,-3.2020719,18z/data=!3m1!4b1!4m5!3m4!1s0x4887c78dd4738ad1:0x3110196f7e4a9d6f!8m2!3d55.9464543!4d-3.2009776
+    meetup_id: 246546953
+    talks:
+      - title: "Why advances in Automotive Driving Aids Systems (ADAS) + efficient C++ meet safety concerns"
+        speaker: Illya Rudkin, Codeplay
+        id: adas-safety-concerns
+        youtube_id: mpCNIVtahRg
+      - title: "Daily C++"
+        speaker: Barney Dellar, Canon Medical
+        id: daily-cpp
+        youtube_id: k8tOcFkbacM
+      - title: "A system that I used to know"
+        speaker: Benoit Chauvin
+        id: system-used-to-know
   - datetime: 2018-02-12T19:00:00Z
     details: |
       <p>Join us at a local bar/eatery to chat about C++ with the local community and take part in our C++ quiz!</p>
