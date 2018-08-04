@@ -7,8 +7,12 @@ upcoming:
       image_url: https://maps.googleapis.com/maps/api/staticmap?center=55.9464558,-3.2020719&zoom=14&size=609x260&markers=55.9464558,-3.2020719
   meetup_id: 246546962
   details: |
-    <p>Free entry. Food and refreshments provided.</p>
-    <p>Talks details coming soon.</p>
+    <p>Free entry. Food and refreshments provided. Talks:</p>
+    <ul>
+      <li>Strong Types in C++ — <i>Barney Dellar, Canon Medical</i></li>
+      <li>Building C++ — <i>Morris Hafner, Codeplay</i></li>
+    </ul>
+
 previous:
   - datetime: 2018-04-09T19:00:00Z
     location:
