@@ -1,5 +1,5 @@
 upcoming:
-  datetime: 2018-08-13T19:00:00Z
+  datetime: 2019-05-15T19:00:00Z
   location:
     name: Codeplay, Level C, Argyle House, Lady Lawson St., EH3 9DR
     map:
@@ -7,13 +7,48 @@ upcoming:
       image_url: https://maps.googleapis.com/maps/api/staticmap?center=55.9464558,-3.2020719&zoom=14&size=609x260&markers=55.9464558,-3.2020719
   meetup_id: 246546962
   details: |
-    <p>Free entry. Food and refreshments provided. Talks:</p>
-    <ul>
-      <li>Strong Types in C++ — <i>Barney Dellar, Canon Medical</i></li>
-      <li>Building C++ — <i>Morris Hafner, Codeplay</i></li>
-    </ul>
+    <p>Come along to C++ Edinburgh to chat and network with local C++ developers and see some great talks (details coming soon).</p>
+    <p>Pizza and drinks provided! There will be directions to the meeting room at reception.</p>
 
 previous:
+  - datetime: 2019-02-11T19:00:00Z
+    location:
+      name: OX184, Cowgate, Edinburgh, EH1 1JJ
+      map:
+        url: https://www.google.co.uk/maps/place/OX184/@55.9487,-3.1903887,17z/data=!3m1!4b1!4m5!3m4!1s0x4887c78509801e65:0xb62f16edc10a441c!8m2!3d55.9487!4d-3.1882
+    meetup_id: krmpqmyzdbpb
+  - datetime: 2018-12-10T19:00:00Z
+    location:
+      name: Codeplay, Level C, Argyle House, Lady Lawson St., EH3 9DR
+      map:
+        url: https://www.google.co.uk/maps/place/Codeplay+Software+Ltd./@55.9464558,-3.2020719,18z/data=!3m1!4b1!4m5!3m4!1s0x4887c78dd4738ad1:0x3110196f7e4a9d6f!8m2!3d55.9464543!4d-3.2009776
+        image_url: https://maps.googleapis.com/maps/api/staticmap?center=55.9464558,-3.2020719&zoom=14&size=609x260&markers=55.9464558,-3.2020719
+    meetup_id: krmpqmyxqbnb
+  - datetime: 2018-12-01T09:30:00Z
+    location:
+      name: Codebase, 38 Castle Terrace, Edinburgh EH3 9DZ
+      map:
+        url: https://www.google.com/maps/place/CodeBase/@55.9471549,-3.2017023,15z/data=!4m2!3m1!1s0x0:0x5727e05b4321b9f6?sa=X&ved=2ahUKEwjE_o2quYriAhX8VBUIHciEC2AQ_BIwEXoECAkQCw
+    meetup_id: 256116117
+  - datetime: 2018-10-08T19:00:00Z
+    location:
+      name: OX184, Cowgate, Edinburgh, EH1 1JJ
+      map:
+        url: https://www.google.co.uk/maps/place/OX184/@55.9487,-3.1903887,17z/data=!3m1!4b1!4m5!3m4!1s0x4887c78509801e65:0xb62f16edc10a441c!8m2!3d55.9487!4d-3.1882
+    meetup_id: krmpqmyxnblb
+  - datetime: 2018-08-13T19:00:00Z
+    location:
+      name: Codeplay, Level C, Argyle House, Lady Lawson St., EH3 9DR
+      map:
+        url: https://www.google.co.uk/maps/place/Codeplay+Software+Ltd./@55.9464558,-3.2020719,18z/data=!3m1!4b1!4m5!3m4!1s0x4887c78dd4738ad1:0x3110196f7e4a9d6f!8m2!3d55.9464543!4d-3.2009776
+        image_url: https://maps.googleapis.com/maps/api/staticmap?center=55.9464558,-3.2020719&zoom=14&size=609x260&markers=55.9464558,-3.2020719
+    meetup_id: 246546962
+    details: |
+      <p>Free entry. Food and refreshments provided. Talks:</p>
+      <ul>
+        <li>Strong Types in C++ — <i>Barney Dellar, Canon Medical</i></li>
+        <li>Building C++ — <i>Morris Hafner, Codeplay</i></li>
+      </ul>
   - datetime: 2018-04-09T19:00:00Z
     location:
       name: Codeplay, Level C, Argyle House, Lady Lawson St., EH3 9DR
