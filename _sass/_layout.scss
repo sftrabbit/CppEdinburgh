@@ -12,28 +12,6 @@ $size-gutter-width: 45px, 35px, 0px;
 	@return nth($size-page-width, index($size-names, $size));
 }
 
-@function column-width($size) {
-	@return nth($size-column-width, index($size-names, $size));
-}
-
-@function gutter-width($size) {
-	@return nth($size-gutter-width, index($size-names, $size));
-}
-
-@function column-width-n($size, $columns: 1) {
-	@if $size == flow {
-		@return column_width($size);
-	} @else {
-		@return column_width($size) + (column-width($size) + gutter-width($size))
-		                            * ($columns - 1);
-	}
-}
-
-@function column-offset($size, $column) {
-	@return gutter-width($size) + (column-width($size) + gutter-width($size))
-	                            * $column;
-}
-
 @mixin clearfix {
 	&::after {
 		content: "";
@@ -42,92 +20,6 @@ $size-gutter-width: 45px, 35px, 0px;
 	}
 }
 
-.row {
-	@include clearfix;
-
-	margin-left: (-(gutter-width(normal)));
-	padding-bottom: 2.5em;
-
-	@media (max-width: upper-limit(thin)) {
-		margin-left: -(gutter-width(thin));
-	}
-	@media (max-width: upper-limit(flow)) {
-		margin-left: -(gutter-width(flow));
-	}
-	@media (max-width: upper-limit(tiny)) {
-		padding-bottom: 2.5em;
-	}
-
-	&:first-child {
-		padding-top: 2.5em;
-
-		@media (max-width: upper-limit(tiny)) {
-			padding-top: 2.5em;
-		}
-	}
-}
-
-@mixin column {
-	float: left;
-	margin-left: gutter-width(normal);
-
-	@media (max-width: upper-limit(thin)) {
-		margin-left: gutter-width(thin);
-	}
-	@media (max-width: upper-limit(flow)) {
-		margin-left: gutter-width(flow);
-	}
-}
-
-@for $i from 1 through 6 {
-	.column-#{$i} {
-		@include column;
-		width: column-width-n(normal, $i);
-
-		@media (max-width: upper-limit(thin)) {
-			width: column-width-n(thin, $i);
-		}
-
-		@media (max-width: upper-limit(flow)) {
-			@include clearfix;
-
-			margin-bottom: 3.5em;
-			width: column-width-n(flow, $i);
-
-			&:last-child {
-				margin-bottom: 0;
-			}
-		}
-	}
-}
-
-@for $i from 1 through 2 {
-	.offset-#{$i} {
-		margin-left: column-offset(normal, $i);
-
-		@media (max-width: upper-limit(thin)) {
-			margin-left: column-offset(thin, $i);
-		}
-		@media (max-width: upper-limit(flow)) {
-			margin-left: 0;
-		}
-	}
-}
-
 @mixin center {
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.container {
-	@include center;
-	width: page-width(normal);
-
-	@media (max-width: upper-limit(thin)) {
-		width: page-width(thin);
-	}
-	@media (max-width: upper-limit(flow)) {
-		width: page-width(flow);
-		margin: 0 30px;
-	}
+	margin: 0 auto;
 }

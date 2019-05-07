@@ -1,35 +1,28 @@
 ---
 layout: default
 ---
-			<div class="container">
-				<div class="row">
-					<div class="column-4">
-						<h1>Meet-ups</h1>
-						<p>Join us at C++ Edinburgh for some great talks and to hang out with local C++ developers. Everyone's welcome! To help us continue to be a friendly and inclusive event, please take a look at our <a href=/code-of-conduct.html>Code of Conduct</a>.</p>
-						<p><b>To find out about our next meet-ups</b>, join us on <a href="https://www.meetup.com/cppedinburgh/">Meetup.com</a> or our <a href="https://groups.google.com/forum/#!forum/cppedinburgh">mailing list</a> or follow us on <a href="http://twitter.com/cppedinburgh">Twitter</a>.</p>
-						<p><b>Interested in doing a talk?</b> Whether you have some interesting C++ experiences or projects or would just like to spread some knowledge, we'd love to have you as a speaker! No need to be an expert &mdash; C++ Edinburgh is a great opportunity to practise your presentation skills and get feedback. If you'd like to do a talk, <a href="http://goo.gl/forms/QrOJuHCe87">let us know</a>!</p>
-					</div>
-					<section class="column-2 sponsors">
-						<h1>Thanks to our sponsors</h1>
-						<ul>
-							<li><a href="https://www.codeplay.com/"><img src="/images/codeplay.png" alt="CodePlay"></a></li>
-							<li><a href="https://research.eu.medical.canon/"><img src="/images/canon.png" alt="Canon Medical Research Europe Ltd."></a></li>
-							<li>
-								<p>Join the UK's international C++ conference, <a href="https://cpponsea.uk">C++ on Sea</a>:</p>
-								<a href="https://cpponsea.uk"><img src="/images/cpponsea.png" alt="C++ on Sea"></a>
-							</li>
-						</ul>
-					</section>
-				</div>
-			</div>
-			<section class="upcoming">
+<div class="introduction">
+	<div>
+		<p>We bring Edinburgh's C++ developer community together by hosting meet-ups for knowledge sharing and networking, providing information on the local industry, and promoting the work of our fellow C++ developers.</p>
+		<p>Everyone's welcome in our community, regardless of experience or background! Help us to be as friendly and inclusive as possible by taking a look at our <a href="#">Code of Conduct</a>.</p>
+		<div class="sponsors">
+			<p>Thanks to our sponsors</p>
+			<a href="https://www.codeplay.com/"><img src="/images/codeplay.png" alt="CodePlay"></a> <a href="https://research.eu.medical.canon/"><img src="/images/canon.png" alt="Canon Medical Research Europe Ltd."></a>
+		</div>
+	</div>
+</div>
+<div class="container">
+	<section id="upcoming">
 {% assign upcoming = site.data.events.upcoming %}
-				<div class="container">
-					<div class="row">
-						<div class="column-2">
-							<hgroup>
-								<h2>Upcoming meet-up</h2>
-								<h1 datetime="{{ upcoming.datetime | date_to_xmlschema }}">
+		<h1>Upcoming event</h1>
+		<div class="item">
+			<div class="details">
+				<ul class="icon-list">
+					<li>
+						<span class="fas fa-calendar-alt"></span>
+						<p>
+							<time datetime="{{ upcoming.datetime | date_to_xmlschema }}">
+{{ upcoming.datetime | date: "%l%P on %A" }}
 {% assign day = upcoming.datetime | date: "%-d"  %}
 {% case day %}
 	{% when '1' or '21' or '31' %}{{ day }}st
@@ -38,66 +31,54 @@ layout: default
 	{% else %}{{ day }}th
 {% endcase %}
 {{ upcoming.datetime | date: "%B %Y" }}
-								</h1>
-							</hgroup>
-{% if upcoming.location.name != null %}
-							<p class="location">7pm at <img src="/images/location.png" alt="Location:"> <a href="{{ upcoming.location.map.url }}">{{ upcoming.location.name }}</a></p>
-							<p><a href="https://www.meetup.com/cppedinburgh/events/{{ upcoming.meetup_id }}/" class="button">RSVP on Meetup.com</a></p>
-{% endif %}
-						</div>
-						<div class="column-2">
-							{{ upcoming.details }}
-						</div>
-						<div class="column-2 map">
-							<a href="{{ upcoming.location.map.url }}" style="background-image: url({{ upcoming.location.map.image_url }})"></a>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="container previous">
+							</time>
+						</p>
+					</li>
+					<li>
+						<span class="fas fa-map-marker-alt"></span>
+						<p><a href="{{ upcoming.location.map.url }}">Codeplay, Level C, Argyle House, Lady Lawson St., EH3 9DR</a></p>
+					</li>
+				</ul>
+				<a href="{{ upcoming.location.map.url }}"class="map"><img src="https://maps.googleapis.com/maps/api/staticmap?center=55.9464558,-3.2020719&zoom=14&size=320x130&markers=55.9464558,-3.2020719&key=AIzaSyCwN-dmb9BjYv3mM1siiyNVxAtwktCJ7Nk"></a>
+			</div>
+			<div class="description">
+				{{ upcoming.details }}
+				<a href="https://www.meetup.com/cppedinburgh/events/{{ upcoming.meetup_id }}/" class="meetup"><span class="fab fa-meetup"></span> Let us know you're coming</a>
+			</div>
+		</div>
+	</section>
+	<section class="past-events">
+		<h1>Past events</h1>
 {% for event in site.data.events.previous %}
 	{% assign timestamp = event.datetime | date: "%Y%m" %}
-				<div class="row">
-					<div class="column-2">
-						<hgroup>
-							<h1 datetime="{{ event.datetime | date_to_xmlschema }}">
-	{% assign day = event.datetime | date: "%-d"  %}
-	{% case day %}
-		{% when '1' or '21' or '31' %}{{ day }}st
-		{% when '2' or '22' %}{{ day }}nd
-		{% when '3' or '23' %}{{ day }}rd
-		{% else %}{{ day }}th
-	{% endcase %}
-	{{ event.datetime | date: "%B %Y" }}
-							</h1>
-						</hgroup>
-						<p class="location"><img src="/images/location.png" alt="Location:"> <a href="{{ event.location.map.url }}">{{ event.location.name }}</a></p>
-	{% if event.intro_talks == null %}
-		{% if event.talks != null %}
-						<a href="/slides/{{ timestamp }}-intro.pdf">
-							<div class="thumbnail mini">
-								<img src="/images/thumbnails/201503-welcome-to-cpp-edinburgh.png" alt="Slides for Welcome to C++ Edinburgh">
-							</div>
-						</a>
-		{% endif %}
-	{% else %}
-		{% for intro_talk in event.intro_talks %}
-						<a href="/slides/{{ timestamp }}-{{ intro_talk.id }}.pdf">
-							<div class="thumbnail mini">
-								<img src="/images/thumbnails/{{ timestamp }}-{{ intro_talk.id }}.png" alt="Slides for {{ intro_talk.title }}">
-							</div>
-						</a>
-		{% endfor %}
-	{% endif %}
-					</div>
-					<div class="column-4">
+		<div class="item">
+			<div class="details">
+				<ul class="icon-list">
+					<li>
+						<span class="fas fa-calendar-alt"></span>
+						<p>
+							<time datetime="{{ event.datetime | date_to_xmlschema }}">
+{% assign day = event.datetime | date: "%-d"  %}
+{% case day %}
+	{% when '1' or '21' or '31' %}{{ day }}st
+	{% when '2' or '22' %}{{ day }}nd
+	{% when '3' or '23' %}{{ day }}rd
+	{% else %}{{ day }}th
+{% endcase %}
+{{ event.datetime | date: "%B %Y" }}
+							</time>
+						</p>
+					</li>
+					<li>
+						<span class="fas fa-map-marker-alt"></span>
+						<p><a href="{{ event.location.map.url }}">Codeplay, Level C, Argyle House, Lady Lawson St., EH3 9DR</a></p>
+					</li>
+				</ul>
+			</div>
+			<div class="description">
 	{% if event.talks != null %}
+				<div class="gallery">
 		{% for talk in event.talks %}
-			{% assign loopindex = forloop.index0 | modulo: 2 %}
-			{% if loopindex == 0 %}
-						<div class="row">
-			{% endif %}
-							<div class="column-2">
 			{% capture slides_url %}/slides/{{ timestamp }}-{{ talk.id }}.pdf{% endcapture %}
 			{% if talk.url == null %}
 				{% if talk.youtube_id == null %}
@@ -118,19 +99,19 @@ layout: default
 			{% else %}
 				{% capture link %}(<a href="{{ talk.link.url }}">{{ talk.link.title }}</a>){% endcapture %}
 			{% endif %}
-							<a href="{{ talk_url }}">
-								<div class="thumbnail {% if talk.youtube_id != null %}video{% endif %}">
-									<img src="/images/thumbnails/{{ timestamp }}-{{ talk.id }}.png" alt="Slides for {{ talk.title }}">
-								</div>
-							</a>
-							<p><a href="{{ talk_url }}">{{ talk.title }}</a> {{ slides_link }} {{ link }} &mdash; <i>{{ talk.speaker }}</i></p>
+					<div>
+						<a href="{{ talk_url }}">
+							<div class="thumbnail {% if talk.youtube_id != null %}video{% endif %}">
+								<img src="/images/thumbnails/{{ timestamp }}-{{ talk.id }}.png" alt="Slides for {{ talk.title }}">
 							</div>
-			{% if loopindex == 1 or forloop.last %}
-						</div>
-			{% endif %}
-		{% endfor %}
-	{% endif %}
+						</a>
 					</div>
+		{% endfor %}
 				</div>
+	{% endif %}
+				<a href="https://www.meetup.com/cppedinburgh/events/{{ upcoming.meetup_id }}/" class="meetup secondary"><span class="fab fa-meetup"></span> More details</a>
+			</div>
+		</div>
 {% endfor %}
-			</section>
+	</section>
+</div>

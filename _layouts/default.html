@@ -6,75 +6,47 @@
 		<meta name="description" content="Meet up with fellow C++ developers in Edinburgh for talks, socialising, and networking">
 		<meta name="author" content="Joseph Mansfield">
 		<link rel="stylesheet" href="/css/screen.css" type="text/css">
-		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Hind:400,300,600,500|Raleway:200" type="text/css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i" type="text/css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" type="text/css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 		<link rel="icon" sizes="16x16" type="image/vnd.microsoft.icon" href="/images/icon-16.ico">
 		<link rel="icon" sizes="32x32" type="image/vnd.microsoft.icon" href="/images/icon-32.ico">
 		<meta name=viewport content="width=device-width, initial-scale=1">
 	</head>
 	<body>
 		<header>
-			<div class="container">
-				<div class="row">
-					<hgroup class="column-2">
-						<h1 class="title"><a href="/">C++ <span>Edinburgh</span></a></h1>
-					</hgroup>
-					<div class="column-4">
-						<ul class="social">
-							<li><a href="https://www.meetup.com/cppedinburgh/"><img src="/images/meetup.svg" alt="Meetup.com"></a></li>
-							<li><a href="https://twitter.com/cppedinburgh"><img src="/images/twitter.svg" alt="Twitter"></a></li>
-							<li><a href="https://www.youtube.com/channel/UC3MI-cTQcGTkwWsf6z0hldQ"><img src="/images/youtube.svg" alt="YouTube"></a></li>
-							<li><a href="https://groups.google.com/forum/#!forum/cppedinburgh"><img src="/images/email.svg" alt="Mailing List"></a></li>
-						</ul>
-						<nav>
-							<ul>
-								<li><a href="/">Meet-ups</a></li>
-								<li><a href="/mentors.html">Mentors</a></li>
-								<li><a href="/companies.html">Companies</a></li>
-								<li><a href="/code-of-conduct.html">Code of Conduct</a></li>
-							</ul>
-						</nav>
-					</div>
-				</div>
-			</div>
+			<img class="logo" src="/images/cppedinburgh.svg">
+			<nav>
+				<ul>
+					<li><a href="/">Events</a></li>
+					<li><a href="/mentors.html">Mentorships</a></li>
+					<li class="separator"><a href="/companies.html">Companies</a></li>
+					<li class="social"><a href="https://www.meetup.com/cppedinburgh/"><img src="/images/meetup.svg" alt="Meetup.com"></a></li>
+					<li class="social"><a href="https://twitter.com/cppedinburgh"><img src="/images/twitter.svg" alt="Twitter"></a></li>
+					<li class="social"><a href="https://www.youtube.com/channel/UC3MI-cTQcGTkwWsf6z0hldQ"><img src="/images/youtube.svg" alt="YouTube"></a></li>
+					<li class="social"><a href="https://groups.google.com/forum/#!forum/cppedinburgh"><img src="/images/email.svg" alt="Mailing List"></a></li>
+				</ul>
+{% assign upcoming = site.data.events.upcoming %}
+				<p>
+					<b><span class="fas fa-calendar-alt"></span> Upcoming event</b>:
+					<a href="/#upcoming">
+						<time datetime="{{ upcoming.datetime | date_to_xmlschema }}">
+{{ upcoming.datetime | date: "%l%P on %A" }}
+{% assign day = upcoming.datetime | date: "%-d"  %}
+{% case day %}
+	{% when '1' or '21' or '31' %}{{ day }}st
+	{% when '2' or '22' %}{{ day }}nd
+	{% when '3' or '23' %}{{ day }}rd
+	{% else %}{{ day }}th
+{% endcase %}
+{{ upcoming.datetime | date: "%B %Y" }}
+						</time>
+					</a>
+				</p>
+			</nav>
 		</header>
 		<main>
 {{ content }}
 		</main>
-		<footer>
-			<div class="container">
-				<div class="row">
-					<div class="column-3">
-						<h1>Contact</h1>
-						<p>To get in touch, contact us via <a href="mailto:cppedinburgh@gmail.com">email</a> or <a href="https://twitter.com/cppedinburgh">Twitter</a>.</p>
-					</div>
-					<div class="column-3">
-						<h1>Follow us</h1>
-						<ul class="social">
-							<li><a href="https://www.meetup.com/cppedinburgh/"><img src="/images/meetup.svg" alt="Meetup.com"></a></li>
-							<li><a href="https://twitter.com/cppedinburgh"><img src="/images/twitter.svg" alt="Twitter"></a></li>
-							<li><a href="https://www.youtube.com/channel/UC3MI-cTQcGTkwWsf6z0hldQ"><img src="/images/youtube.svg" alt="YouTube"></a></li>
-							<li><a href="https://groups.google.com/forum/#!forum/cppedinburgh"><img src="/images/email.svg" alt="Mailing List"></a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="row volunteers" id="organisers">
-					<div class="column-6">
-						<h1>Organisers</h1>
-					</div>
-{% for volunteer in site.data.volunteers %}
-					<section class="column-2">
-						<div class="profile-photo"><img src="{{ volunteer.photo_url }}"></div>
-						<h1>{{ volunteer.name }}</h1>
-						<ul>
-	{% for link in volunteer.links %}
-							<li><a href="{{ link.url }}">{{ link.name }}</a></li>
-	{% endfor %}
-						</ul>
-					</section>
-{% endfor %}
-				</div>
-			</div>
-		</footer>
 		<script async>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
