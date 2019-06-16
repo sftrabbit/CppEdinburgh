@@ -72,6 +72,80 @@ body {
 			}
 		}
 	}
+
+	> footer {
+		padding: 2rem 0;
+		color: #fff;
+		background-color: #0065bd;
+
+		a {
+			color: #a7c4de;
+		}
+
+		> div {
+			@extend .container;
+			display: flex;
+			flex-direction: row;
+
+			> div {
+				flex: 1 0;
+			}
+
+			section:last-child {
+				margin-bottom: 0;
+			}
+
+			h1:first-child {
+				margin-top: 0;
+			}
+
+			ul.organisers {
+				list-style-type: none;
+				margin: 0;
+
+				li {
+					@include clearfix;
+					margin-bottom: 1rem;
+
+					img {
+						float: left;
+						width: 3rem;
+						margin-right: 1rem;
+						border-radius: 50%;
+					}
+
+					h1 {
+						margin: 0;
+						padding: 0;
+						font-size: 1rem;
+					}
+
+					ul {
+						list-style-type: none;
+
+						li {
+							float: left;
+							margin: 0 1rem 0 0;
+						}
+					}
+				}
+			}
+
+			ul.social {
+				list-style-type: none;
+				margin: 0;
+
+				li {
+					float: left;
+					margin: 0 1rem 0 0;
+
+					img {
+						width: 3rem;
+					}
+				}
+			}
+		}
+	}
 }
 
 .introduction {

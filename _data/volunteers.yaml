@@ -1,21 +1,21 @@
 - name: Joseph Mansfield
   photo_url: https://s.gravatar.com/avatar/9f438bc04462ee5af4132921a3474842?s=100
   links:
-    - name: Twitter
+    - name: "@sftrabbit"
       url: https://twitter.com/sftrabbit
-    - name: Website
+    - name: josephmansfield.uk
       url: http://josephmansfield.uk
 - name: Simon Brand
   photo_url: https://s.gravatar.com/avatar/c425873f547d93f4079ca252b42a886d?s=100
   links:
-    - name: Twitter
+    - name: "@TartanLlama"
       url: https://twitter.com/TartanLlama
-    - name: Website
+    - name: tartanllama.github.io
       url: https://tartanllama.github.io/
 - name: Gordon Brown
   photo_url: /images/aerialmantis.jpg
   links:
-    - name: Twitter
+    - name: "@AerialMantis"
       url: https://twitter.com/AerialMantis
-    - name: Website
+    - name: aerialmantis.co.uk
       url: http://www.aerialmantis.co.uk/
