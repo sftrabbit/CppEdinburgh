@@ -7,6 +7,11 @@
 	@include center;
 
 	width: 960px;
+
+	@media (max-width: 980px) {
+		width: auto;
+		margin: 0 1rem;
+	}
 }
 
 body {
@@ -18,56 +23,100 @@ body {
 	> header {
 		@extend .container;
 
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		height: 6rem;
-		margin-top: 1rem;
-		margin-bottom: 1rem;
+		@media (min-width: 980px) {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			height: 6rem;
+			margin-top: 1rem;
+			margin-bottom: 1rem;
 
-		.logo {
-			flex: 0 0;
-			height: 100%;
-
-			img {
+			.logo {
+				flex: 0 0;
 				height: 100%;
-			}
-		}
 
-		nav {
-			flex-grow: 1;
-			margin-left: 4rem;
-
-			ul {
-				display: flex;
-				flex-direction: row;
-				list-style-type: none;
-				margin: 0;
-
-				li {
-					flex: 0 0;
-					margin: 0 2rem 0 0;
-
-					&.separator {
-						flex: 1 0;
-					}
-
-					&.social {
-						margin-left: 1rem;
-						margin-right: 0;
-					}
-
-					img {
-						width: 1.5rem;
-					}
+				img {
+					height: 100%;
 				}
 			}
 
-			p {
-				margin: 1rem 0 0 0;
+			nav {
+				flex-grow: 1;
+				margin-left: 4rem;
 
-				.fas {
-					margin-right: 0.2rem;
+				> div {
+					display: flex;
+					flex-direction: row;
+
+					ul {
+						display: flex;
+						flex-direction: row;
+						list-style-type: none;
+						margin: 0;
+
+						li {
+							flex: 0 0;
+							margin: 0 2rem 0 0;
+
+							&.separator {
+								flex: 1 0;
+							}
+
+							&.social {
+								margin-left: 1rem;
+								margin-right: 0;
+							}
+
+							img {
+								width: 1.5rem;
+							}
+						}
+					}
+
+					ul:first-child {
+						flex: 1 0;
+					}
+				}
+
+				p.upcoming {
+					margin: 1rem 0 0 0;
+
+					.fas {
+						margin-right: 0.2rem;
+					}
+				}
+			}
+		}
+
+		@media (max-width: 980px) {
+			.logo {
+				display: block;
+				margin: 1rem auto;
+				width: 8rem;
+
+				img {
+					display: block;
+				}
+			}
+
+			nav {
+				ul {
+					list-style-type: none;
+					margin: 1rem auto;
+					text-align: center;
+
+					li {
+						display: inline-block;
+						margin: 0 0.5rem;
+
+						img {
+							width: 2.5rem;
+						}
+					}
+				}
+
+				p.upcoming {
+					display: none;
 				}
 			}
 		}
@@ -84,15 +133,24 @@ body {
 
 		> div {
 			@extend .container;
-			display: flex;
-			flex-direction: row;
 
-			> div {
-				flex: 1 0;
+			@media (min-width: 980px) {
+				display: flex;
+				flex-direction: row;
+
+				> div {
+					flex: 1 0;
+				}
+
+				section:last-child {
+					margin-bottom: 0;
+				}
 			}
 
-			section:last-child {
-				margin-bottom: 0;
+			@media (max-width: 980px) {
+				section {
+					margin-bottom: 1rem;
+				}
 			}
 
 			h1:first-child {
@@ -132,6 +190,8 @@ body {
 			}
 
 			ul.social {
+				@include clearfix;
+
 				list-style-type: none;
 				margin: 0;
 
@@ -140,7 +200,7 @@ body {
 					margin: 0 1rem 0 0;
 
 					img {
-						width: 3rem;
+						width: 2.5rem;
 					}
 				}
 			}
@@ -149,6 +209,10 @@ body {
 }
 
 .introduction {
+	@media (max-width: 980px) {
+		display: none;
+	}
+
 	padding: 2rem 0;
 	background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url('/images/event.jpg');
 	background-size: cover;
@@ -175,17 +239,25 @@ body {
 }
 
 .item {
-	display: flex;
-	flex-direction: row;
-	margin-bottom: 1rem;
+	@media (min-width: 980px) {
+		display: flex;
+		flex-direction: row;
+		margin-bottom: 1rem;
 
-	.details {
-		flex: 0 0 320px;
-		margin-right: 3rem;
+		.details {
+			flex: 0 0 320px;
+			margin-right: 3rem;
+		}
+
+		.description {
+			flex: 1 0;
+		}
 	}
 
-	.description {
-		flex: 1 0;
+	@media (max-width: 980px) {
+		.details {
+			margin-bottom: 1rem;
+		}
 	}
 }
 

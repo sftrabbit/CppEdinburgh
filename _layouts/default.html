@@ -16,17 +16,21 @@
 		<header>
 			<a href="/" class="logo"><img src="/images/cppedinburgh.svg"></a>
 			<nav>
-				<ul>
-					<li><a href="/">Events</a></li>
-					<li><a href="/mentorships.html">Mentorships</a></li>
-					<li class="separator"><a href="/companies.html">Companies</a></li>
-					<li class="social"><a href="https://www.meetup.com/cppedinburgh/"><img src="/images/meetup.svg" alt="Meetup.com"></a></li>
-					<li class="social"><a href="https://twitter.com/cppedinburgh"><img src="/images/twitter.svg" alt="Twitter"></a></li>
-					<li class="social"><a href="https://www.youtube.com/channel/UC3MI-cTQcGTkwWsf6z0hldQ"><img src="/images/youtube.svg" alt="YouTube"></a></li>
-					<li class="social"><a href="https://groups.google.com/forum/#!forum/cppedinburgh"><img src="/images/email.svg" alt="Mailing List"></a></li>
-				</ul>
+				<div>
+					<ul>
+						<li><a href="/">Events</a></li>
+						<li><a href="/mentorships.html">Mentorships</a></li>
+						<li><a href="/companies.html">Companies</a></li>
+					</ul>
+					<ul>
+						<li class="social"><a href="https://www.meetup.com/cppedinburgh/"><img src="/images/meetup.svg" alt="Meetup.com"></a></li>
+						<li class="social"><a href="https://twitter.com/cppedinburgh"><img src="/images/twitter.svg" alt="Twitter"></a></li>
+						<li class="social"><a href="https://www.youtube.com/channel/UC3MI-cTQcGTkwWsf6z0hldQ"><img src="/images/youtube.svg" alt="YouTube"></a></li>
+						<li class="social"><a href="https://groups.google.com/forum/#!forum/cppedinburgh"><img src="/images/email.svg" alt="Mailing List"></a></li>
+					</ul>
+				</div>
 {% assign upcoming = site.data.events.upcoming %}
-				<p>
+				<p class="upcoming">
 					<b><span class="fas fa-calendar-alt"></span> Upcoming event</b>:
 					<a href="/#upcoming">
 						<time datetime="{{ upcoming.datetime | date_to_xmlschema }}">
