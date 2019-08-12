@@ -1,14 +1,29 @@
 upcoming:
-  datetime: 2019-06-17T19:00:00Z
+  datetime: 2019-08-12T19:00:00Z
   location:
     name: OX184, Cowgate, Edinburgh, EH1 1JJ
+    name: Codeplay, Level C, Argyle House, Lady Lawson St., EH3 9DR
     map:
-      url: https://www.google.co.uk/maps/place/OX184/@55.9487,-3.1903887,17z/data=!3m1!4b1!4m5!3m4!1s0x4887c78509801e65:0xb62f16edc10a441c!8m2!3d55.9487!4d-3.1882
-  meetup_id: krmpqmyzjbnb
+      url: https://www.google.co.uk/maps/place/Codeplay+Software+Ltd./@55.9464558,-3.2020719,18z/data=!3m1!4b1!4m5!3m4!1s0x4887c78dd4738ad1:0x3110196f7e4a9d6f!8m2!3d55.9464543!4d-3.2009776
+      image_url: https://maps.googleapis.com/maps/api/staticmap?center=55.9464558,-3.2020719&zoom=14&size=609x260&markers=55.9464558,-3.2020719
+  meetup_id: krmpqmyzlbqb
   details: |
-    <p>Join us at OX184 for a C++ Edinburgh social, to chat about all things C++ and get to know Edinburgh's C++ developer community. We will of course have our usual fun with a C++ quiz, so please free free to take part!</p>
-    <p>There won't be any talks nor sponsored food/drink at this event - for that, please come along to our next meet-up!</p>
+    <p>Come along to C++ Edinburgh to see some great talks and to chat and network with local C++ developers. This time, we have two special guests visiting Edinburgh with the following talks:</p>
+    <ul>
+      <li>Dependency Management at the End of the Rainbow — <i>Corentin Jabot</i></li>
+      <li>C++20: the small things — <i>Timur Doumler</i></li>
+    </ul>
+    <p>Pizza and drinks will be provided!</p>
 previous:
+  - datetime: 2019-06-17T19:00:00Z
+    location:
+      name: OX184, Cowgate, Edinburgh, EH1 1JJ
+      map:
+        url: https://www.google.co.uk/maps/place/OX184/@55.9487,-3.1903887,17z/data=!3m1!4b1!4m5!3m4!1s0x4887c78509801e65:0xb62f16edc10a441c!8m2!3d55.9487!4d-3.1882
+    meetup_id: krmpqmyzjbnb
+    details: |
+      <p>Join us at OX184 for a C++ Edinburgh social, to chat about all things C++ and get to know Edinburgh's C++ developer community. We will of course have our usual fun with a C++ quiz, so please free free to take part!</p>
+      <p>There won't be any talks nor sponsored food/drink at this event - for that, please come along to our next meet-up!</p>
   - datetime: 2019-05-15T19:00:00Z
     location:
       name: Codeplay, Level C, Argyle House, Lady Lawson St., EH3 9DR
