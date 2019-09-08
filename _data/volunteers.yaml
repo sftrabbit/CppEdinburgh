@@ -5,7 +5,7 @@
       url: https://twitter.com/sftrabbit
     - name: josephmansfield.uk
       url: http://josephmansfield.uk
-- name: Simon Brand
+- name: Sy Brand
   photo_url: https://s.gravatar.com/avatar/c425873f547d93f4079ca252b42a886d?s=100
   links:
     - name: "@TartanLlama"
@@ -19,3 +19,10 @@
       url: https://twitter.com/AerialMantis
     - name: aerialmantis.co.uk
       url: http://www.aerialmantis.co.uk/
+- name: Christopher Di Bella
+  photo_url: /images/cjdb.jpg
+  links:
+    - name: "@cjdb_ns"
+      url: https://twitter.com/cjdb_ns
+    - name: cjdb.com.au
+      url: https://www.cjdb.com.au/
